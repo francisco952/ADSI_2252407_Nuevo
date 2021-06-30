@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contactenos.css">
+    <link rel="stylesheet" href="css/listas.css">
+    <title>Contactenos</title>
+</head>
+<body>
+    <ul>
+        <li><a href="pagina.html"> Inicio</a></li>
+        <li><a href="ciudadesdelmundo.html"> Productos</a></li>
+        <li><a href=""> Contactenos</a></li>
+        <li><a href="Promociones.html"> Promociones</a></li>
+        <li><a href="layouts.html">Layouts</a></li>
+        <li></li>
+      </ul>
+      <h1>Contactenos</h1>
+<form action="registrar-info.php" method="get">
+        <fieldset>
+        <legend>Ingrese la Información</legend>
+        <br>
+        <input type="text" name="nombres" size="40" maxlength="50" placeholder="Ingrese su Nombre"><br>
+        <br>    
+        <input type="text" name="apellidos" size="40" maxlength="50" placeholder="Ingrese su Apellido" ><br><br> 
+        Ingrese su Inquietud<br> 
+        <textarea name="Pregunta" cols="40" rows="5"></textarea><br><br>
+        Género<br>
+        <input type="radio" name="genero" value="masculino">masculino<br>
+        <input type="radio" name="genero" value="femenino">femenino<br>
+        <input type="radio" name="genero" value="indeterminado">indeterminado<br><br>
+        Catalogo de Productos<br>
+        <input type="checkbox" name="interes" value="pañales" >PAÑALES<br>
+        <input type="checkbox" name="interes" value="coches" >COCHES<br>
+        <input type="checkbox" name="interes" value="ropa para bebe" >ROPA PARA BEBE<br>
+        <input type="checkbox" name="interes" value="cunas">CUNAS<br>
+        Ciudad de Residencia<br>
+        <select name="ciudad" >
+         <option value="Pitalito">Pitalito</option>  
+         <option value="Neiva">Neiva</option>
+         <option value="Acevedo">Acevedo</option>
+         <option value="San Agustin">San Agustin</option>
+         <option value="Garzón">Garzón</option> 
+        </select>
+        <input type="submit" value="Enviar">
+        </fieldset>  
+</body>
+</html>

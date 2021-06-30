@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+text-align: center;
+}
+.titulo-principal{
+    margin: 15px;
+}
+blockquote{
+    font-size: 2.4em;
+    color: coral;
+    text-align: right;
+    font-weight: 900;
+    font-style: italic;
+}
+.fuente-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.fuente-negrita{
+    font-weight: bold;
+}
+.fuente-italica{
+    font-size: 32pt;
+    font-style: italic;
+}
+span.resaltado{
+    font-size: 3em;
+    color:olive;
+    font-weight: bold;
+    font-family: 'roboto',serif;
+}
+.contenedor-main{
+    margin-bottom: 40px;
+}
+.contenedor-1, .contenedor-2, .contenedor-3 {
+    width: 200px;
+    height: 350px;
+    padding: 0.4em;
+    display: inline-block;
+    color: whitesmoke;
+}
+.contenedor-1{ 
+    background-color: brown;
+    border: 3px solid blue;
+    }
+.contenedor-2{
+    background-color:blueviolet;
+    border: 3px solid blue; 
+    }
+.contenedor-3{
+    background-color:silver;
+    border: 3px solid blue;
+    }
+    .paris, .venecia, .perro {
+        display: inline-block;
+        padding: 0.4em;
+    }
+    .venecia, .perro {
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    .paris{
+        margin-top: 16px;
+    float: left;
+    margin-right: 4px;
+    }
+    .titulo-viajes{
+        font-size: 32pt;
+        font-style: italic;    
+    }  
+    .madre {
+        background-color: bisque;
+    }
+    .madre2 {
+        background-color: khaki;
+    }
+    .paris2, .venecia2 {
+        display: inline-block;
+        padding: 0.4em;
+    }
+    .paris2{
+     float: left;
+     margin-right: 25px;
+    margin-left: 25px;
+    }
+    .venecia2{
+    float: right;
+    margin-bottom: 30px;
+    }
+    p{
+    font-size: 2em;
+    margin-left: 25px;
+    }
+    .estilo-enlace {
+        font-size: 2.5em;
+    }
+.enlace-animales, .estilo-enlace, .ciudades-mundo {
+    color: cyan;
+}
