@@ -100,9 +100,11 @@ span.resaltado{
     }  
     .madre {
         background-color: bisque;
+        margin: 0 5px;
     }
     .madre2 {
         background-color: khaki;
+        margin: 0 5px;
     }
     .paris2, .venecia2 {
         display: inline-block;
