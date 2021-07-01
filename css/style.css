@@ -5,6 +5,32 @@
 body{
 text-align: center;
 }
+.style-titulo{
+    font-family: 'Indie Flower', cursive;
+    font-size: 4.5em;
+}
+p.font-Grandstander{
+    font-family: 'Grandstander', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+    /* grandstander-regular - latin */
+    @font-face {
+    font-family: 'Grandstander';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/grandstander-v4-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/grandstander-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/grandstander-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/grandstander-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/grandstander-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/grandstander-v4-latin-regular.svg#Grandstander') format('svg'); /* Legacy iOS */
+  }
+.parrafo-arriba {
+    font-family: 'Grandstander', Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 5px;
+}
 .titulo-principal{
     margin: 15px;
 }
