@@ -7,6 +7,10 @@
     font-size: 3.5em;
     text-align: center;
 }
+h2.titulo-secundario {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.2em;
+}
 .content-main {
     width: 100%;
     height: 700px;
