@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor-1, .contenedor-2, .contenedor-3, .contenedor-4 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}   
+.contenedor-1 {
+    background-color: antiquewhite;
+ left: 0;  
+ top: 0;
+}
+.contenedor-2 {
+    background-color: olivedrab; 
+    right: 0;
+    top: 0;
+}
+.contenedor-3{
+    background-color: paleturquoise;
+    left: 0;
+    bottom: 0;
+}
+.contenedor-4 {
+    background-color: rebeccapurple;
+    right: 0;
+    bottom: 0;
+}
+.contenedor-5 {
+    background-color: royalblue;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+}
+.contenedor-6 {
+    background-color: seagreen;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+}

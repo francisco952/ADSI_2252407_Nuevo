@@ -16,3 +16,6 @@ a{
 a:hover {
     font-size: 1.2em;
 }
+.fa {
+    color: white;
+}
