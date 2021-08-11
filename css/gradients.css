@@ -1,0 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.gradiente{
+    background-image: linear-gradient(to right, #333333, #dd1818);
+    width: 100%;
+    height: 100vh;
+}

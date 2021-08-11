@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario_avanzado.css">
+    <title>Formulario Avanzado</title>
+</head>
+<body>
+    <h1 class="titulo-principal">Citas</h1>
+    <form action="registrar-informacion.php" method="GET">
+        <fieldset>
+             <div class="box-principal">
+                <input class="controls" type="text" name="nombres" size="40" maxlength="50" placeholder="Ingrese su(s) Nombres">
+                <br><br>
+                <input class="controls" type="text" name="apellidos" size="40" maxlength="50" placeholder="Ingrese su(s) Apellidos">
+                <br><br>
+                <label > Observaciones</label><br>
+                <textarea class="controls-check" name="Observaciones" cols="40" rows="5">Observaciones(Max. 200 caracteres)</textarea>
+                <br><br>
+                <label> Ver Dias Disponibles </label><br><br>
+                <label><input class="controls-check"  type="checkbox" name="interes" value="Lunes" >Lunes </label> <br>
+                <label><input class="controls-check" type="checkbox" name="interes" value="Martes" >Martes</label> <br>
+                <label><input class="controls-check" type="checkbox" name="interes" value="Miercoles" >Miercoles </label><br>
+                <label><input class="controls-check" type="checkbox" name="interes" value="Jueves" >Jueves </label><br>
+                <label><input class="controls-check" type="checkbox" name="interes" value="Viernes" >Viernes</label> <br><br>
+                <label> IPS de atencion </label><br><br>
+                <label> <input class="controls-check" type="radio"  name="ips" value="IPS Centro">IPS Centro </label><br>
+                <label> <input class="controls-check" type="radio"  name="ips" value="IPS Agua Blanca">IPS Agua Blanca </label><br>
+                <label> <input class="controls-check" type="radio"  name="ips" value="IPS Calamao">IPS Callamao </label><br>
+                <label> <input class="controls-check" type="radio"  name="ips" value="IPS Solarte">IPS Solarte </label> <br><br>
+                <label> Seleccione un medico </label><br>
+                <select class="controls" name="medico">
+                    <option value="Liliana Yisela Gomez">Liliana Yisela Gomez</option>
+                    <option value="Jhon Jaime Parra">Jhon Jaime Parra</option>
+                    <option value="Orlando Gomez">Orlando Gomez</option>  
+                </select> <br>
+            <input class="control-button" type="submit" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
