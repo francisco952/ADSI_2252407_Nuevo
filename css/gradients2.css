@@ -1,7 +1,38 @@
 :root {
-    --primary: rgb(255,0,0);
-    --second: rgb(0,0,255);
+    --primary: #bdc3c79f;
+    --secondary: #2c3e509f;
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 .content-main{
-    background: ;
+    background: linear-gradient(135deg, var(--primary), var(--secondary)),
+    url('../img/bebe_original_350x400.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.titulo{
+    margin: 0 auto;
+    width: 350px;
+    background: red;
+}
+h1{
+    color: palevioletred;
+    font-size: 5.5em;
+    margin-top: 200px;
+    position: absolute;
+    font-style: italic;
+}
+p{
+    color: whitesmoke;
+    font-style: italic;
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    text-align: right;
+    font-size: 3.8em;
 }
