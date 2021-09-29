@@ -1,0 +1,27 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-columns: repeat(3, 150px);
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    border: 1px solid black;
+    margin: 0 auto;
+    font-size: 50px;
+    text-align: center;
+    height: 550px;
+    /* alineando horizontalmente */
+    /* justify-content: center; */
+   /*  justify-content: end; */
+    justify-content: space-evenly;
+
+    /* alineando verticalmente */
+    /* align-content: center; */
+    align-content: space-evenly;
+}
+.contenedor > div {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    background-color: darkcyan;
+}

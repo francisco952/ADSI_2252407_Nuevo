@@ -33,7 +33,7 @@ header, nav, aside, main, footer {
 .page-content{
     display: grid;
     grid-template:      "header header" 100px
-                        "navbar  navbar" 100px
+                        "sidebar  navbar" 100px
                         "sidebar  main" 400px
                         "footer  footer" 150px  / 
                         200px auto;

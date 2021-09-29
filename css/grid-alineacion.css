@@ -1,0 +1,26 @@
+.contenedor{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 20px;
+   width: 90%;
+   max-width: 1000px;
+   border: 1px solid black;
+   margin: 0 auto;
+   font-size: 50px;
+   line-height: 50px;
+   text-align: center;
+   height: 500px;
+   /* alineacion horizontal */
+  /*  justify-items: start;  */
+    /*  justify-items: end; */
+    justify-items: center;
+    /* Alinear verticalmente */
+  /*   align-items: start; */
+   /*  align-items: end; */
+    align-items: stretch;
+}
+.contenedor > div {
+    display: block;
+    padding: 20px;
+}

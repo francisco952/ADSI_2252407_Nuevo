@@ -54,18 +54,22 @@ body{
 }
 .contenedor-main{
     display: grid;
-    grid-template:      "cabeza none none" 150px
+    grid-template:      "cabeza none   none" 150px
                         "cuerpo cuerpo cuerpo" 350px
-                        "hijo1 hijo2 hijo3" 250px  
-                        "texto1 texto2 texto3" 350px;
+                        "hijo1  hijo2  hijo3" 250px  
+                        "texto1 texto2 texto3" 350px /
+                         1fr     1fr     1fr;
     
 }
 @media only screen and (max-width: 1250px) {
     .contenedor-main{
-    grid-template:     "cabeza none " 150px
+    grid-template:      "cabeza  none " 150px
                         "cuerpo cuerpo " 350px
-                        "hijo1 hijo2 " 250px  
-                        "texto1 texto2 " 350px;
+                        "hijo1  hijo2 " 250px  
+                        "texto1 texto2 " 350px
+                        "hijo3  none "  250px
+                        "texto3 none"  350px /
+                        1fr     1fr   ;
     }
 }
 @media only screen and (max-width: 900px) {
