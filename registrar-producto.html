@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-offline.css">
+    <link rel="stylesheet" href="css/bootstrap-menu.css">
+    <title>Registrar</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-2">
+            <nav>
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                    <li class="Registro-usuario"><a href="bootstrap-offline.html">Registrar usuario</a></li>
+                    <li class="Registro-usuario"><a href="#">Registrar Provedor</a></li>
+                    <li><a href="facturacion.html">Facturacion</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-10">
+            <h1>Registrar Provedor</h1>
+            <div class="container-md">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                      <label for="validationCustom01" class="form-label">Nombres</label>
+                      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustom02" class="form-label">Apellidos</label>
+                      <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustomUsername" class="form-label">Corrreo Electronico</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Por favor ingresar correo.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <label for="validationCustom03" class="form-label">Direccion</label>
+                      <input type="text" class="form-control" id="validationCustom03" required>
+                      <div class="invalid-feedback">
+                        Por favor ingrese una direccion valida.
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationCustom04" class="form-label">Municipio</label>
+                      <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Seleccionar...</option>
+                        <option>Caqueta</option>
+                        <option>Bogota</option>
+                        <option>Huila</option>
+                        <option>Meta</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Por favor ingrese un municipio valido.
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Acepto terminos y condiciones
+                        </label>
+                        <div class="invalid-feedback">
+                          Debe aceptar terminos y condiciones.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/validacion.js"></script>

@@ -1,0 +1,39 @@
+.general-box, .box-general, .box-main-3{
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+h2{
+    clear: both;
+}
+div{
+    float: left;
+    position: static;
+}
+.box-main-3 > div{
+    background: darkgoldenrod;
+}
+/* hijos directos */
+.box-sub-padre{
+    margin-right: 310px;
+}
+.box-sub-hijo{
+    margin-left: 310px;
+    margin-top: -20px;
+}
+.box-main-1 div{
+    background: darkgreen;
+}
+/* todos los hijos */
+.box-gen-1 + .box-gen-2 {
+    background: darkseagreen;
+}
+/* alt+126 */
+.box-gen-1_h ~ .box-gen-2_h {
+    background: darkseagreen;
+}
+/* alt+94 */
+.box-main-6>[class^="box-"]{
+    background: darkred;
+}

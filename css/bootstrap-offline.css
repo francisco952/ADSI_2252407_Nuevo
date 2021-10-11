@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.container-md{
+    margin: 40px;
+    border: 1px solid rgb(64, 64, 64, .7);
+    padding: 30px;
+    border-radius: 5px;
+}
+.size-reg-usuario{
+    font-size: 1.05em;
+    height: 55px;
+}
+.btn-enviar{
+    margin-top: 70px;
+}
