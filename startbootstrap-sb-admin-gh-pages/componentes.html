@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Componentes</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/componentes.css">
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Start Bootstrap</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Layouts
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
+                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Pages
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        Authentication
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="login.html">Login</a>
+                                            <a class="nav-link" href="register.html">Register</a>
+                                            <a class="nav-link" href="password.html">Forgot Password</a>
+                                        </nav>
+                                    </div>
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        Error
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="401.html">401 Page</a>
+                                            <a class="nav-link" href="404.html">404 Page</a>
+                                            <a class="nav-link" href="500.html">500 Page</a>
+                                        </nav>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Addons</div>
+                            <a class="nav-link" href="charts.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Charts
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Tables
+                            </a>
+                            <a class="nav-link" href="facturacion.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Facturacion
+                            </a>
+                            <a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Componentes
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <!-- INICIO DE ZONA DE COMPONENTES -->
+                        <div class="container-md">
+                            <div class="row contenedor"> <!-- Accordion -->
+                                <div class="col-12">
+                                <h2>Mi primer acordion</h2>
+                                <div class="accordion accordion-flush" id="accordionFlushExample" >
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Este es el #1 item
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.Esta es una referencia</code> class. This is the first item's accordion body.</div>
+                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Este es el #2 item
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Este es el #3 item
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="row contenedor"> <!-- Alerts -->
+                                <div class="col-12">
+                                    <h2>Mi primer alerta</h2>
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                        </symbol>
+                                        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                        </symbol>
+                                        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                                          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </symbol>
+                                      </svg>
+                                      
+                                      <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                                        <div>
+                                          Esta es una alerta de afirmacion
+                                        </div>
+                                      </div>
+                                      <div class="alert alert-success d-flex align-items-center" role="alert">
+                                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                                        <div>
+                                          Esta es una alerta de Afirmacion
+                                        </div>
+                                      </div>
+                                      <div class="alert alert-warning d-flex align-items-center" role="alert">
+                                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                                        <div>
+                                          Esta es una alerta de preocupacion
+                                        </div>
+                                      </div>
+                                      <div class="alert alert-danger d-flex align-items-center" role="alert">
+                                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+                                        <div>
+                                          Esta es una alerta de negacion
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row contenedor"> <!-- Badges -->
+                                <div class="col-12">
+                                    <h2>Mis primeros Badges</h2>
+                                    <h3>Headings</h3>
+                                    <h1>Hello World <span class="badge bg-secondary">Hello</span></h1>
+                                    <h6>New York Times <span class="badge bg-secondary">News</span></h6>
+                                    <h3>Boxs Notificacions</h3>
+                                        <button type="button" class="btn btn-primary">
+                                            Notifications <span class="badge bg-secondary">4</span>
+                                        </button> <br><br>
+                                        <button type="button" class="btn btn-primary position-relative">
+                                            Conversaciones
+                                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            99+
+                                            <span class="visually-hidden">unread messages</span>
+                                            </span>
+                                        </button> <br><br>
+                                        <button type="button" class="btn btn-primary position-relative">
+                                            Perfil
+                                            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                            <span class="visually-hidden">New alerts</span>
+                                            </span>
+                                        </button>
+                                    <h3>Boxs colors</h3>
+                                        <span class="badge bg-primary">Primary</span>
+                                        <span class="badge bg-secondary">Secondary</span>
+                                        <span class="badge bg-success">Success</span>
+                                        <span class="badge bg-danger">Danger</span>
+                                        <span class="badge bg-warning text-dark">Warning</span>
+                                        <span class="badge bg-info text-dark">Info</span>
+                                        <span class="badge bg-light text-dark">Light</span>
+                                        <span class="badge bg-dark">Dark</span>
+                                </div>
+
+                            </div>
+                            <div class="row contenedor"> <!-- Breadcrumb -->
+                                <h2>Mi primer Breadcrumb</h2>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                      <li class="breadcrumb-item active" aria-current="page">Casa</li>
+                                    </ol>
+                                  </nav>
+                                  
+                                  <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                      <li class="breadcrumb-item active" aria-current="page">Libreria</li>
+                                    </ol>
+                                  </nav>
+                                  
+                                  <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                      <li class="breadcrumb-item"><a href="#">Hogar</a></li>
+                                      <li class="breadcrumb-item"><a href="#">Libreria</a></li>
+                                      <li class="breadcrumb-item active" aria-current="page">Datos</li>
+                                    </ol>
+                                  </nav>
+                            </div>
+                            <div class="row contenedor"> <!-- Buttons -->
+                                <h2>Mis primeros botones</h2>
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-primary">Primero</button>
+                                    <button type="button" class="btn btn-secondary">Segundo</button>
+                                    <button type="button" class="btn btn-success">Suceso</button>
+                                    <button type="button" class="btn btn-danger">Peligro</button>
+                                    <button type="button" class="btn btn-warning">Advertencia</button>
+                                    <button type="button" class="btn btn-info">Informacion</button>
+                                    <button type="button" class="btn btn-light">Blanco</button>
+                                    <button type="button" class="btn btn-dark">Oscuro</button>
+                                    <button type="button" class="btn btn-link">Link</button>
+                                </div><br><br>
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                    <button type="button" class="btn btn-outline-success">Success</button>
+                                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                                    <button type="button" class="btn btn-outline-info">Info</button>
+                                    <button type="button" class="btn btn-outline-light">Light</button>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                </div>
+                            </div>
+                            <div class="row contenedor"> <!-- Buttons Groups -->
+                                <h2>Buttons Groups</h2><br>
+                                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                                    <div class="btn-group me-2" role="group" aria-label="First group">
+                                      <button type="button" class="btn btn-primary">1</button>
+                                      <button type="button" class="btn btn-primary">2</button>
+                                      <button type="button" class="btn btn-primary">3</button>
+                                      <button type="button" class="btn btn-primary">4</button>
+                                    </div>
+                                    <div class="btn-group me-2" role="group" aria-label="Second group">
+                                      <button type="button" class="btn btn-secondary">5</button>
+                                      <button type="button" class="btn btn-secondary">6</button>
+                                      <button type="button" class="btn btn-secondary">7</button>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Third group">
+                                      <button type="button" class="btn btn-info">8</button>
+                                    </div> 
+                                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                        <button type="button" class="btn btn-primary">1</button>
+                                        <button type="button" class="btn btn-primary">2</button>
+                                      
+                                        <div class="btn-group" role="group">
+                                          <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown
+                                          </button>
+                                          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                  </div>
+                            </div>
+                            <div class="row contenedor"> <!-- Cards -->
+                                <h2>Tarjetas</h2>
+                                <h3>Tarjeta con imagen</h3>
+                                <div class="card" style="width: 18rem;">
+                                    <img src="..." class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item">An item</li>
+                                      <li class="list-group-item">A second item</li>
+                                      <li class="list-group-item">A third item</li>
+                                    </ul>
+                                    <div class="card-body">
+                                      <a href="#" class="card-link">Card link</a>
+                                      <a href="#" class="card-link">Another link</a>
+                                    </div>
+                                  </div>
+                                  <h3>tarjeta Anuncio</h3>
+                                  <div class="card text-center">
+                                    <div class="card-header">
+                                      Featured
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Special title treatment</h5>
+                                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                    <div class="card-footer text-muted">
+                                      2 days ago
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="row contenedor"> <!-- Carousel -->
+                            <h2>Carrusel</h2>
+                            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="../img/aceites.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>First slide label</h5>
+                                      <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="../img/belleza.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Second slide label</h5>
+                                      <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="../img/ghost-face.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Third slide label</h5>
+                                      <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="row contenedor"> <!-- Close button -->
+                                <h2>Boton de Cerrado</h2>
+                                <div class="cerrado">
+                                    <button type="button" class="btn-close" disabled aria-label="Close"></button>
+                                </div>
+                                <div class="fondo-invertido">
+                                    <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+                                    <button type="button" class="btn-close btn-close-white" disabled aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="row contenedor"> <!-- Collapse -->
+                                <h2>Collapse</h2>
+                                <p>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                      Link with href
+                                    </a>
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                      Button with data-bs-target
+                                    </button>
+                                  </p>
+                                  <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                    </div>
+                                  </div>
+                                  <p>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+                                  </p>
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                        <div class="card card-body">
+                                          Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                        <div class="card card-body">
+                                          Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="row contenedor"> <!-- Dropdowns -->
+                                <h2>Dropdowns</h2>
+                                <div class="col-12">
+                                    <h3>Single button</h3>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Dropdown button
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12">
+                                        <h3>Single button colors</h3>
+                                        <!-- Example single danger button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Action
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Example single info button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Action
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- Example single warning button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Action
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h3>Split button</h3>
+                                    <!-- Example split danger button -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-danger">Action</button>
+                                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row contenedor"> <!-- List Group -->
+                                <h2>List Group</h2>
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                      <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Subheading</div>
+                                        Cras justo odio
+                                      </div>
+                                      <span class="badge bg-primary rounded-pill">14</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                      <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Subheading</div>
+                                        Cras justo odio
+                                      </div>
+                                      <span class="badge bg-primary rounded-pill">14</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                      <div class="ms-2 me-auto">
+                                        <div class="fw-bold">Subheading</div>
+                                        Cras justo odio
+                                      </div>
+                                      <span class="badge bg-primary rounded-pill">14</span>
+                                    </li>
+                                  </ol>
+                            </div>
+                            <div class="row contenedor"> <!-- Modal -->
+                                <h2>Modals</h2>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Launch demo modal
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                        ...
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row contenedor"> <!-- Navs and tabs -->
+                                <h2>Navs and tabs</h2>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                    </li>
+                                  </ul>
+                            </div>
+                            <div class="row contenedor"><!-- Navbar -->
+                            <h2>Navbar</h2>
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand" href="#">Navbar</a>
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                      </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Dropdown
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                      </li>
+                                    </ul>
+                                    <form class="d-flex">
+                                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                      <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </nav>
+                            </div>
+                            <div class="row contenedor"> <!-- Offcanvas -->
+                                <h2>Offcavans</h2>
+                                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                    Link with href
+                                  </a>
+                                  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                    Button with data-bs-target
+                                  </button>
+                                  
+                                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                    <div class="offcanvas-header">
+                                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                      <div>
+                                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                                      </div>
+                                      <div class="dropdown mt-3">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                                          Dropdown button
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="row contenedor"> <!-- Pagination -->
+                                <h2>Pagination</h2>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                            <div class="row contenedor"> <!-- Popovers --> <!-- Alert!!!! -->
+                                <h2>Popovers</h2>
+                                <div class="col-4">
+                                <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                                    Popover on top
+                                  </button>
+                                  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+                                    Popover on right
+                                  </button>
+                                  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+                                    Popover on bottom
+                                  </button>
+                                  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+                                    Popover on left
+                                  </button>
+                                </div>
+                            </div>
+                            <div class="row contenedor"> <!-- Progress --> <!-- Alert!!!! -->
+                                <h2>Progress</h2>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <div class="progress">
+                                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                  </div>
+                            </div>
+                            <div class="row contenedor"> <!-- Scrollspy -->
+                            <h2>Scrollspy</h2>
+                            <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+                                <a class="navbar-brand" href="#">Navbar</a>
+                                <ul class="nav nav-pills">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#scrollspyHeading1">First</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                                      <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                                      <li><hr class="dropdown-divider"></li>
+                                      <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </nav>
+                              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                                <h4 id="scrollspyHeading1">First heading</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsam dicta, modi odit dolorum reprehenderit, iste autem ratione quos recusandae ea error voluptate accusamus debitis ab asperiores totam! Molestiae quasi ad at reprehenderit asperiores error fuga quam commodi, minus a facilis soluta architecto culpa ex libero doloremque ipsum suscipit sit eos laboriosam fugiat voluptatibus nisi explicabo! Asperiores deleniti, corporis illum error facere eligendi expedita illo numquam porro id! Soluta incidunt error magni ducimus temporibus consequatur quo quod a cumque quam, quae, corporis veritatis quasi inventore officia doloribus. Officia quisquam quas, sunt hic quo voluptates minus ipsa omnis voluptatem. Officiis, explicabo.</p>
+                                <h4 id="scrollspyHeading2">Second heading</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore distinctio corporis veritatis aliquam aspernatur et ipsa deleniti voluptatem non natus illum maiores quo officiis excepturi incidunt aperiam quidem sequi, sit dolorem laborum dicta. Eos corporis quas, eaque illum officia optio voluptas, aperiam hic nisi iure quo quae. Soluta, rerum eveniet. Saepe tenetur aliquid doloribus voluptatum atque libero eos fuga iste ex aperiam, adipisci autem quia sapiente! Ea quibusdam optio reprehenderit voluptatum eos sequi atque qui quod maxime quos sapiente et aut officiis, animi odit mollitia sint amet repellat! Minus omnis eum nostrum architecto et magni. Molestias quaerat eos cum consequuntur?</p>
+                                <h4 id="scrollspyHeading3">Third heading</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia omnis, facilis culpa ab ducimus facere voluptates quasi esse, magni maxime fugit debitis, beatae cumque dolore. Corrupti minus neque harum? Praesentium neque deserunt laborum aliquid maiores atque magnam dignissimos nam hic, aperiam iure ad, aliquam suscipit? Minima, quibusdam. Assumenda, eaque incidunt! Expedita repudiandae voluptatum porro quisquam quae? Adipisci id numquam delectus tempore et impedit dolor suscipit fuga ut deleniti, culpa cum quisquam itaque doloribus rerum pariatur facilis necessitatibus at, quam blanditiis? Culpa, magni esse. Error repellendus inventore dolor laborum officiis odio minima. Explicabo qui hic reprehenderit ut fugit, aut adipisci ab!</p>
+                                <h4 id="scrollspyHeading4">Fourth heading</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolor corrupti eos qui repudiandae expedita saepe dicta? Deleniti, accusantium? Nesciunt saepe, adipisci quam possimus perspiciatis corrupti nihil veniam earum quo esse ex accusantium et aut, qui nemo impedit sapiente pariatur neque atque facere minima. Quos eius accusamus explicabo soluta minima culpa ab amet aperiam incidunt iure! Vitae quisquam veniam perferendis quo perspiciatis doloremque hic modi tenetur est? Similique rerum omnis rem, aut atque unde minima amet exercitationem, eligendi ut facilis at iusto eveniet error? Quas molestiae aliquam nostrum velit nulla nam illum. Quibusdam velit consectetur ducimus corporis ea voluptates veritatis?</p>
+                                <h4 id="scrollspyHeading5">Fifth heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque harum quas nisi in provident explicabo quasi voluptas, ipsum dolores. Repudiandae non at exercitationem eligendi provident, modi atque commodi dolor libero, ad tenetur facilis voluptatum vero debitis quam quas adipisci voluptatibus laboriosam. Doloremque, sapiente. Eligendi nostrum officia dolore debitis! Eaque expedita eius aspernatur id. Accusantium sed sapiente esse commodi cum hic, facere quidem eos tempore adipisci soluta obcaecati recusandae sint fuga. Amet similique dolores id aliquid quidem numquam sed obcaecati molestiae quas quae, nostrum unde excepturi at. Saepe placeat qui libero nisi tenetur, laborum nam cupiditate quas. Ex, fugit repellendus!</p>
+                              </div>
+                            </div>
+                            <div class="row contenedor"> <!-- Spinners -->
+                                <h2>spinners</h2>
+                                <div class="col-12">
+                                    <div class="spinner-border" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="spinner-grow text-primary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <div class="spinner-grow text-secondary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <div class="spinner-grow text-success" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <div class="spinner-grow text-danger" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <div class="spinner-grow text-warning" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <div class="spinner-grow text-info" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <div class="spinner-grow text-light" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <div class="spinner-grow text-dark" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <div class="spinner-border text-secondary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <div class="spinner-border text-success" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <div class="spinner-border text-danger" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <div class="spinner-border text-warning" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <div class="spinner-border text-info" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <div class="spinner-border text-light" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                      <div class="spinner-border text-dark" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row contenedor"> <!-- Toasts --> <!-- pendiente -->
+                                <h2>Toasts</h2>
+                               
+                            </div>
+                            <div class="row contenedor"> <!-- Tooltips -->
+                            <h2>Tooltips</h2>
+                            <div class="col-4">
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                                Tooltip on top
+                              </button>
+                              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+                                Tooltip on right
+                              </button>
+                              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+                                Tooltip on bottom
+                              </button>
+                              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                                Tooltip on left
+                              </button>
+                            </div>
+                            </div>
+                        </div>
+                    <!-- FINAL DE ZONA DE COMPONENETES -->
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+        <script src="js/tooltips.js"></script>
+        <script src="js/popvres.js"></script>
+    </body>
+</html>
