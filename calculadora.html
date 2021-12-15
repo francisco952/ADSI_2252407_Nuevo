@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <form class="contenedor">
+        <table>
+            <tr><td colspan="4"><input type="text" id="pantalla"></td></tr>
+            <tr><td><button type="button" class="boton1" onclick="Asignar_uno()">1</button></td>
+            <td><button type="button" class="boton1" onclick="Asignar_dos()">2</button></td>
+            <td><button type="button" class="boton1" onclick="Asignar_tres()">3</button></td>
+            <td><button type="button" class="boton-suma" onclick="Asignar_suma()">+</button></td></tr>
+            <tr>
+            <td><button type="button" class="boton1" onclick="Asignar_cuatro()">4</button></td>
+            <td><button type="button" class="boton1" onclick="Asignar_cinco()">5</button></td>
+            <td><button type="button" class="boton1" onclick="Asignar_seis()">6</button></td>
+            <td><button type="button" class="boton-resta" onclick="Asignar_resta()">-</button></td></tr>
+            <tr>
+            <td><button type="button" class="boton1" onclick="Asignar_siete()">7</button></td>
+            <td><button type="button" class="boton1" onclick="Asignar_ocho()">8</button></td>
+            <td><button type="button" class="boton1" onclick="Asignar_nueve()">9</button></td>
+            <td><button type="button" class="boton-multiplicar" onclick="Asignar_multiplicar()">*</button></td></tr>
+            <tr>
+            <td><button type="button" class="boton-simbolos" onclick="Asignar_igual()">=</button></td>
+            <td><button type="button" class="boton1" onclick="Asignar_cero()">0</button></td>
+            <td><button type="button" class="boton-reset" onclick="Asignar_Reset()">C</button></td>
+            <td><button type="button" class="boton-division" onclick="Asignar_Division()">/</button></td></tr>
+        </table>
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+    var valor_digitado="";
+    var dato1="";
+    var dato2="";
+    var operacion="";
+    function Asignar_uno(){
+        valor_digitado=document.getElementById('pantalla').value;
+        document.getElementById('pantalla').value=valor_digitado+1;
+    }
+    function Asignar_dos(){
+        valor_digitado=document.getElementById('pantalla').value;
+        document.getElementById('pantalla').value=valor_digitado+2;
+    }
+    function Asignar_tres(){
+        valor_digitado=document.getElementById('pantalla').value;
+        document.getElementById('pantalla').value=valor_digitado+3;
+    }
+    function Asignar_cuatro(){
+        valor_digitado=document.getElementById('pantalla').value;
+        document.getElementById('pantalla').value=valor_digitado+4;
+    }
+    function Asignar_cinco(){
+        valor_digitado=document.getElementById('pantalla').value;
+        document.getElementById('pantalla').value=valor_digitado+5;
+    }
+    function Asignar_seis(){
+        valor_digitado=document.getElementById('pantalla').value;
+        document.getElementById('pantalla').value=valor_digitado+6;
+    }
+    function Asignar_siete(){
+        valor_digitado=document.getElementById('pantalla').value;
+        document.getElementById('pantalla').value=valor_digitado+7;
+    }
+    function Asignar_ocho(){
+        valor_digitado=document.getElementById('pantalla').value;
+        document.getElementById('pantalla').value=valor_digitado+8;
+    }
+    function Asignar_nueve(){
+        valor_digitado=document.getElementById('pantalla').value;
+        document.getElementById('pantalla').value=valor_digitado+9;
+    }
+    function Asignar_cero(){
+        valor_digitado=document.getElementById('pantalla').value;
+        document.getElementById('pantalla').value=valor_digitado+0;
+    }
+    function Asignar_suma(){
+        dato1=document.getElementById('pantalla').value;
+        valor_digitado="";
+        document.getElementById('pantalla').value='';
+        operacion="suma";
+    }
+    function Asignar_resta(){
+        dato1=document.getElementById('pantalla').value;
+        valor_digitado="";
+        document.getElementById('pantalla').value='';
+        operacion="resta";
+    }
+    function Asignar_multiplicar(){
+        dato1=document.getElementById('pantalla').value;
+        valor_digitado="";
+        document.getElementById('pantalla').value='';
+        operacion="multiplicacion";
+    }
+    function Asignar_Division(){
+        dato1=document.getElementById('pantalla').value;
+        valor_digitado="";
+        document.getElementById('pantalla').value='';
+        operacion="division";
+    }
+    function Asignar_igual()
+    {
+        dato2=  document.getElementById('pantalla').value;
+        if(operacion=="suma"){
+            document.getElementById('pantalla').value=parseFloat(dato1)+parseFloat(dato2);
+        }
+        if(operacion=="resta"){
+            document.getElementById('pantalla').value=parseFloat(dato1)-parseFloat(dato2);
+        }
+        if(operacion=="multiplicacion"){
+            document.getElementById('pantalla').value=parseFloat(dato1)*parseFloat(dato2);  
+        }
+        if(operacion=="division"){
+            document.getElementById('pantalla').value=parseFloat(dato1)/parseFloat(dato2);  
+        }
+    }
+    function Asignar_Reset(){
+        dato1=0;
+        dato2=0;
+        document.getElementById('pantalla').value='';
+    }
+</script>
