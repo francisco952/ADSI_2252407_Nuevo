@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: darkblue;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="Alerta();">Comprar</a>
+    <button onclick="Saludar();" ondblclick="Hola();">Estado</button>
+    <img src="../img/bob.jpg" onmouseover="src='../img/bob perturbado.jpg'" onmouseout="src='../img/bob.jpg'">
+    <img src="../img/maquillaje.jpg" onmouseover="alert('usuario no identificado peligroso')">
+    <input type="text" class="tam-fuente" size="30" onfocus="this.style.backgroundColor='whitesmoke'"
+    onblur="this.style.backgroundColor='white'" >
+    <h3>Validamdo usuario</h3>
+    <form onsubmit="validarinfo('Numerodocumento');">
+        Numero de Documento:
+        <input type="text" id="Numerodocumento">
+        <input type="submit" value="Enviar">
+    </form><br>
+    <h3>Validando si el usuario ingrreso informacion</h3>
+    <form onsubmit="Validainfo('numedocu');">
+        numero Documento
+        <input type="text" id="numerodocu">
+        <input type="submit" value="Enviar">
+        <br>
+        <form>
+            codigo dane:
+            <input type="text" id="codigo" onblur="buscarciudad();">
+            ciudad:
+            <input type="text" id="ciudad">
+        </form>
+    </form>
+</body>
+</html>
+<script>
+    function buscarciudad(){
+        var nombreciudad;
+        var codigopostal = document.getElementById("codigo").value;
+        switch(codigopostal){
+            case"41551":
+                nombreciudad = "Pitalito";
+                break;
+            case "41001":
+                nombreciudad = "Neiva";
+                break;
+            case "41530":
+                nombreciudad = "Palestina"
+        }
+        document.getElementById("ciudad").value = nombreciudad;
+    }
+    function validarinfo(Numerodocumento){
+        var text = document.getElementById(Numerodocumento).value;
+        if( text === ""){
+            alert("Ingrese el numero");
+        }
+    }
+
+    function Alerta(){
+        alert("Compra hecha con exito");
+    }
+    function Saludar(){
+        alert("Hola!!! Como estas?");
+    } 
+    function Hola(){
+        alert("Me encontrate!!");
+    }
+</script>
