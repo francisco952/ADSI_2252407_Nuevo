@@ -1,0 +1,23 @@
+body{
+    background-color: #9990ba;
+}
+.titulo{
+    font-size: 1em;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contenedor_principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.contenedor_secundario{
+    padding: 1em;
+}
+.bebe{
+    border-radius: 5px;
+}

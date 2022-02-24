@@ -1,21 +1,55 @@
-ul{
-    padding: 20px;
-    background-color: rgb(240,180,220);
-    font-size: 1.3em;
-    text-align:right;
+*{
+    padding: 0;
+    margin: 0;
 }
-li{
-    display:inline-block ;
-    padding-right: 20px;
+nav {
+    background-color: #5d1372;
+    position: absolute;
+    z-index: 10;
+    left: -20em;
+    top: 0;
+    transition: all .5s;
 }
-a{
-    text-decoration: none;
+.menu {
     list-style: none;
-    color: whitesmoke;
+    line-height: 60px;
+    margin: 7em auto 0 auto;
+    width: 16em;
+    padding-left: .1em;
 }
-a:hover {
-    color: red;
+.menu a {
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+    display: block;
+    padding-left: 1.5em;
+    width: 100%;
+    transition: all .2s;
 }
-.fa {
-    color: white;
+.menu li {
+    box-shadow: 3px 0 rgba(255, 255, 255, .2) inset;
+    padding-left: .8em;
+    margin-bottom: 5px;
+}
+.menu li:hover {
+    box-shadow: 15em 0 rgb(255, 255, 255, .2) inset;
+}
+.fas {
+    color: plum;
+    font-size: 1.3em;
+    padding-right: .3em;
+}
+.fa-bars {
+    z-index: 20;
+    position: absolute;
+}
+label.icono-menu {
+    position: absolute;
+    z-index: 20;
+    top: 50px;
+    left: 40px;
+    cursor: pointer;
+}
+nav.mostrarNav {
+    left: 0;
 }

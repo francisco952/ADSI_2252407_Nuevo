@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/onmouseover.css">
+    <title>Peliculas</title>
+</head>
+<body>
+    <div >
+        <img src="img/supercool567x298jpg.jpg" alt="" id="show_movie">
+    </div>
+    <div class="content_movie">
+        <div id="main_movie">
+            <img src="img/madmax776x1200.jfif" alt="madmax776x1200" onmouseover="Mostrarpelicula('img/madmax776x1200.jfif');" onmouseleave="Retornar();">
+        </div>
+        <div id="main_movie">
+            <img src="img/supercool471x700.jfif"  alt="supercool471x700" onmouseover="Mostrarpelicula('img/supercool471x700.jfif');" onmouseleave="Retornar();">
+        </div>
+        <div id="main_movie">
+            <img src="img/catch300x424.jfif" alt="catch300x424" onmouseover="Mostrarpelicula('img/catch300x424.jfif');" onmouseleave="Retornar();">
+        </div>
+    </div>
+    <!-- Desaparecer imagen -->
+    <div>
+        <img src="img/madmax776x1200.jfif" alt="" onmouseover="Desaparecer();" id="Desaparecer">
+    </div>
+    <!-- Cambiar imagen junto a otra -->
+    <div>
+        <img src="img/catch500x332.jfif" alt="" onmouseover="cambiarimagen();" id="iddelhermano">
+        <img src="img/madmax776x1200.jfif" alt="" onmouseleave="reotrn();">
+    </div>
+</body>
+</html>
+<script src="js/onmouseover.js"></script>
