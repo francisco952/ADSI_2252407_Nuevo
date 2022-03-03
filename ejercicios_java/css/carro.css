@@ -1,0 +1,101 @@
+.contenedor{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: grid;
+    gap: 10px;
+    width: 95%;
+    max-width: 600px;
+    padding: 10px;
+    grid-template:
+    'subtotal subtotal' 
+    'espacio espacio'
+    'imagen descripcion'
+    'puntos boton';
+}
+.contenedor_botones{
+    padding: 5px;
+}
+.espacio_compra{
+    background-color: yellow;
+    border-radius: 5px;   
+}
+.subtotal{
+    grid-area: subtotal;
+}
+.espacio_compra{
+    grid-area: espacio
+}
+.descripcion{
+    grid-area: descripcion;
+}
+.cont_imagen{
+    grid-area: imagen;
+}
+.puntos{
+    grid-area: puntos;
+}
+.boton{
+    grid-area: boton;
+}
+h1, h3, .tipo_tapa{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tipo_tapa{
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+.name_boton{
+    padding: 2em;
+    text-align: center;
+}
+.menos, .suma{
+    padding: 5px;
+    width: 50px;
+    border-radius: 5px;
+}
+.icon-minus, .icon-plus, #Valor{
+    font-size: 2em;
+}
+#Valor{
+    text-align: center;
+}
+.menos{
+    margin-right: -3px;
+}
+.suma{
+    margin-left: -4px;
+}
+.valores{
+    width: 60px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.button{
+    cursor: pointer;
+    padding: 10px 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+.valor{
+    font-size: 1.5em;
+}
+.boton{
+    padding: 8px;
+}
+.arriba{
+    width: 50%;
+}
+.abajo{
+    width: 70%;
+    margin-top: 7px;
+}
+.menos, .suma, .valores {
+    display: inline-block;
+}

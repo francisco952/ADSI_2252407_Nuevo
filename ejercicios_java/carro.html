@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fonts/style.css">
+    <link rel="stylesheet" href="css/carro.css">
+    <title>Compras</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="subtotal">
+            <h1>Subtotal cop <span id="total" class="total">0</span></h1>
+        </div>
+        <div class="espacio_compra">
+            <h2>Procede al Pago (<span id="cantidad">0</span>) Productos</h2>
+        </div>
+        <div class="cont_imagen">
+            <img class="imagen" src="img/java-250x327.jpg" alt="java-250x327">
+        </div>
+        <div class="descripcion">
+            <h3>JavaScript the Definitive Guide <br>
+                Master the World's Most-Used <br>
+                Programing Language <br><br>
+                por David Flanagan</h3>
+            <span class="tipo_tapa">Tapa Blanca</span>
+             <h3>cop<span class="valor">112.350</span></h3>
+        </div>
+        <div class="puntos">
+            <div class="contenedor_botones">
+                <button class="menos" type="submit" onclick="Disminuir();">
+                    <span class="icon-minus"></span>
+                </button>
+                <button class="valores">
+                    <span id="Valor">0</span>
+                </button>
+                <button class="suma" type="submit" onclick="Aumentar();">
+                    <span class="icon-plus"></span>
+                </button>
+            </div>
+        </div>
+        <div class="boton">
+                <button class="button arriba" type="submit">Eliminar</button> 
+                <button class="button abajo" type="submit">Guardar para mas tarde</button> 
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var Precio = 112350;
+    function Aumentar(){
+        let espacio = parseInt(document.getElementById('Valor').innerHTML);
+        let suma = espacio + 1;
+        if(suma <= 10){
+            document.getElementById('Valor').innerHTML = suma;
+            let unidad = (Precio*suma);
+            let Subtotal = new Intl.NumberFormat('es-ES').format(unidad);
+            document.getElementById('total').innerHTML = Subtotal;
+            document.getElementById('cantidad').innerHTML = suma;
+        }
+    }
+    function Disminuir(){
+        let espacio = parseInt(document.getElementById('Valor').innerHTML);
+        let resta = espacio - 1;
+        if(resta >= 0){
+            document.getElementById('Valor').innerHTML = resta;
+            let unidad = (Precio*resta);
+            let Subtotal = new Intl.NumberFormat('es-ES').format(unidad);
+            document.getElementById('total').innerHTML = Subtotal;
+            document.getElementById('cantidad').innerHTML = resta;
+        }
+    }
+</script>
