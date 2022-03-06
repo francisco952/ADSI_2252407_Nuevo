@@ -1,0 +1,102 @@
+.content_main{
+    border: 1px solid black;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+    padding: 15px;
+    grid-template:  " titulo titulo titulo titulo" 60px
+                    "codigo barracodigo empty empty " 60px
+                    "descripcion barradescripcion barradescripcion barradescripcion" 60px
+                    "unidad barraunidad Stock barrastock" 60px
+                    "boton  boton        boton boton " 50px/
+                       1fr  2fr          1fr   2fr ;
+}
+h1{
+    text-align: center;
+}
+label, input{
+    padding: 10px;
+}
+label{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    height: 20px;
+}
+h1{
+    grid-area: titulo;
+}
+.codigo{
+    grid-area: codigo;
+}
+.input_codigo{
+    grid-area: barracodigo;
+}
+.descripcion{
+    grid-area: descripcion;
+}
+.input_descripcion{
+    grid-area: barradescripcion;
+}
+.unidad{
+    grid-area: unidad;
+}
+.input_unidad{
+    grid-area: barraunidad;
+}
+.stock{
+    grid-area: Stock;
+}
+.input_stock{
+    grid-area: barrastock;
+}
+.registrar{
+    grid-area: boton;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+.registrar{
+    background-color: cadetblue;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+}
+button{
+    border: none;
+}
+/*  */
+#contenido{
+    padding: 1em;
+}
+/* Tabla */
+.envio{
+    background-color: violet;
+    border-radius: 5px;
+}
+.Style_table{
+    border-collapse: collapse;
+    border:  1px solid black;
+    margin: 0 auto;
+}
+.text_head{
+    padding: 1em;
+}
+#bodydata td{
+    border:  1px solid black;
+    font-size: 1em;
+    text-align: center;
+}
+.nombre_encabezado th, .nombre_encabezado{
+    border:  1px solid black;
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+    background-color: cadetblue;
+}
