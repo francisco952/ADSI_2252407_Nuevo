@@ -65,15 +65,16 @@ function Crearcolumnas(){
     toaddtd2.appendChild(contenidotext2);
     toaddtd3.appendChild(contenidotext3);
     toaddtd4.appendChild(contenidotext4);
+    Vacio();
 }
 
 /* VALIDAR FORMULARIO == TRUE */
 
 function Vacio(){
-    var codigo = document.getElementById("codigo").innerHTML="";
-    var descripcion = document.getElementById("descripcion").innerHTML="";
-    var valorunidad = document.getElementById("unidad").innerHTML="";
-    var Stock = document.getElementById("stock").innerHTML="";
+    var codigo = document.getElementById("codigo").value ="";
+    var descripcion = document.getElementById("descripcion").value ="";
+    var valorunidad = document.getElementById("unidad").value ="";
+    var Stock = document.getElementById("stock").value ="";
 }
 
 function Validarformulario(){
