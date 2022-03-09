@@ -69,6 +69,13 @@ function Crearcolumnas(){
 
 /* VALIDAR FORMULARIO == TRUE */
 
+function Vacio(){
+    var codigo = document.getElementById("codigo").innerHTML="";
+    var descripcion = document.getElementById("descripcion").innerHTML="";
+    var valorunidad = document.getElementById("unidad").innerHTML="";
+    var Stock = document.getElementById("stock").innerHTML="";
+}
+
 function Validarformulario(){
     if(document.getElementById('codigo').value.trim() == ""){
         document.getElementById('codigo').focus();
