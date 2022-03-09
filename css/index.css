@@ -21,3 +21,9 @@ body{
 .bebe{
     border-radius: 5px;
 }
+@media only screen and (max-width: 375px){
+    h1{
+        font-size: 2em;
+        text-align: center;
+    }
+}

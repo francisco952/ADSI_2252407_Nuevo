@@ -53,3 +53,35 @@ label.icono-menu {
 nav.mostrarNav {
     left: 0;
 }
+@media only screen and (max-width: 375px){
+    nav {
+        background-color: #5d1372;
+        position: absolute;
+        z-index: 10;
+        left: -20em;
+        top: 0;
+        transition: all .5s;
+        width: 220px;
+    }
+    .menu a {
+        color: #fff;
+        font-size: 1em;
+        text-decoration: none;
+        display: block;
+        padding-left: 1em;
+        transition: all .2s;
+    }
+    .menu {
+        list-style: none;
+        line-height: 50px;
+        margin: 7em auto 0 auto;
+    }
+    .menu li {
+        box-shadow: 3px 0 rgba(255, 255, 255, .2) inset;
+        padding-left: 0.5em;
+        margin-bottom: 5px;
+    }
+    .menu li:hover {
+        box-shadow: 15em 0 rgb(255, 255, 255, .2) inset;
+    }
+}
