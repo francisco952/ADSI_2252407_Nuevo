@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.encabezado_menu{
+    background-color: cadetblue;
+    padding: 0.5em;
+    display: grid;
+    gap: 15px;
+    grid-template: "logo_menu barra_busqueda logo_carro" auto/
+                    1fr 5fr 1fr;
+}
+.fa-bars, .icon-shopping-cart{
+    color: black;
+    font-size: 1.9em;
+    cursor: pointer;
+}
+.fa-bars:hover{
+    color: rgb(68, 59, 59);
+}
+.logo_menu{
+    grid-area: logo_menu;
+    margin: 0 auto;
+    padding: 2px;
+}
+.barra_busqueda{
+    grid-area: barra_busqueda;
+    padding: 5px;
+}
+.busqueda{
+    width: 97%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+input[type="text"]{
+    padding-left: 10px;
+    outline: none;
+    border: none;
+}
+.logo_carro{
+    grid-area: logo_carro;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+#contenedor_automovil1{
+    padding: 10px;
+    display: grid;
+    grid-template:  "imagen imagen texto1" 50px
+                    "imagen imagen texto3" 30px 
+                    "imagen imagen texto2" 30px
+                    "imagen imagen empty" auto/
+                    1fr      1fr    1fr;
+}
+.texto1{
+    grid-area: texto1;
+}
+.texto2{
+    grid-area: texto2;
+}
+.textoprecio{
+    grid-area: texto3;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.img_style{
+    grid-area: imagen;
+    width: 100%;
+    border-radius: 5px;
+}
+.texto1, .texto2{
+    font-size: 1.5em;
+}
+.texto1, .texto2, .textoprecio{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin-left: 10px
+}
+
+/* Para vista del celular */
+
+@media only screen and (max-width: 385px){
+    .encabezado_menu{
+        background-color: cadetblue;
+        padding: 0.5em;
+        display: grid;
+        gap: 5px;
+        grid-template: "logo_menu barra_busqueda logo_carro" auto/
+                        1fr 5fr 1fr;
+    }
+    .fa-bars:hover{
+        color:  rgb(59, 59, 196);
+    }
+    .fa-bars, .icon-shopping-cart{
+        color: black;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    .busqueda{
+        width: 97%;
+        height: 20px;
+        border-radius: 5px;
+        border: none;
+    }
+    input[type="text"]{
+        padding-left: 10px;
+        outline: none;
+        border: none;
+        font-weight: bolder;
+    }
+    #contenedor_automovil1{
+        max-width: 400px;
+        padding: 8px;
+        display: grid;
+        grid-template: "imagen imagen texto1" 50px
+                        "imagen imagen texto3" 25px 
+                        "imagen imagen texto2" 25px
+                        "imagen imagen empty" auto/
+                        1fr      1fr    1fr;
+    }
+    .texto1{
+        grid-area: texto1;
+    }
+    .texto2{
+        grid-area: texto2;
+    }
+    .textoprecio{
+        grid-area: texto3;
+        font-size: 0.9em;
+        font-weight: bolder;
+    }
+    .img_style{
+        grid-area: imagen;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .texto1, .texto2{
+        font-size: 1em;
+    }
+    .texto1, .texto2, .textoprecio{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+        margin-left: 10px
+    }
+};
