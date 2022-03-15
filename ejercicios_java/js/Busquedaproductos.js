@@ -21,12 +21,14 @@ window.addEventListener("keydown",function(event){
     if(event.key == "Enter"){
         Limpiar();
         if(busqueda == "Mustang"){
+            bodycarro()
             mostrarinformacio(auto4);
             mostrarinformacio(auto1);
             mostrarinformacio(auto2);
             mostrarinformacio(auto3);
         }
         else if(busqueda == "Maserati"){
+            bodycarro()
             mostrarinformacio(auto6);
             mostrarinformacio(auto5);
             mostrarinformacio(auto7);
@@ -64,5 +66,8 @@ function mostrarinformacio(auto){
     contenedorauto.appendChild(label3);
 }
 function Limpiar(){
-    let barra = document.getElementById('Casila').value = ""
+    let barra = document.getElementById('Casila').value = "";
+}
+function bodycarro(){
+    document.getElementById('main_content').innerHTML = "";
 }
