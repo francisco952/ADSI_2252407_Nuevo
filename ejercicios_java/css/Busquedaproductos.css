@@ -3,7 +3,7 @@
     margin: 0;
 }
 .encabezado_menu{
-    background-color: cadetblue;
+    background-color: rgb(35, 47, 62);
     padding: 0.5em;
     display: grid;
     gap: 15px;
@@ -11,12 +11,12 @@
                     1fr 5fr 1fr;
 }
 .fa-bars, .icon-shopping-cart{
-    color: black;
+    color: white;
     font-size: 1.9em;
     cursor: pointer;
 }
 .fa-bars:hover{
-    color: rgb(68, 59, 59);
+    color: white;
 }
 .logo_menu{
     grid-area: logo_menu;
@@ -77,23 +77,19 @@ input[type="text"]{
     padding: 5px;
     margin-left: 10px
 }
-
 /* Para vista del celular */
 
 @media only screen and (max-width: 385px){
     .encabezado_menu{
-        background-color: cadetblue;
+        background-color: rgb(35, 47, 62);
         padding: 0.5em;
         display: grid;
         gap: 5px;
         grid-template: "logo_menu barra_busqueda logo_carro" auto/
                         1fr 5fr 1fr;
     }
-    .fa-bars:hover{
-        color:  rgb(59, 59, 196);
-    }
     .fa-bars, .icon-shopping-cart{
-        color: black;
+        color: white;
         font-size: 1.5em;
         cursor: pointer;
     }
