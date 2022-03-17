@@ -7,13 +7,21 @@
     padding: 0.5em;
     display: grid;
     gap: 15px;
-    grid-template: "logo_menu barra_busqueda logo_carro" auto/
+    grid-template: "logo_menu barra_busqueda logo_carro" 50px/
                     1fr 5fr 1fr;
 }
 .fa-bars, .icon-shopping-cart{
     color: white;
-    font-size: 1.9em;
     cursor: pointer;
+}
+.fa-bars{
+    font-size: 1.5em;
+}
+.icon-shopping-cart{
+    font-size: 1.9em;
+}
+.icono-menu{
+    margin-bottom: 10px;
 }
 .fa-bars:hover{
     color: white;
@@ -22,10 +30,13 @@
     grid-area: logo_menu;
     margin: 0 auto;
     padding: 2px;
+    z-index: 20;
+    cursor: pointer;
 }
 .barra_busqueda{
     grid-area: barra_busqueda;
     padding: 5px;
+    margin-top: 10px;
 }
 .busqueda{
     width: 97%;
@@ -42,6 +53,7 @@ input[type="text"]{
     grid-area: logo_carro;
     margin: 0 auto;
     padding: 2px;
+    margin-top: 10px;
 }
 
 #contenedor_automovil1{
@@ -91,6 +103,13 @@ input[type="text"]{
     .fa-bars, .icon-shopping-cart{
         color: white;
         font-size: 1.5em;
+        cursor: pointer;
+    }
+    .logo_menu{
+        grid-area: logo_menu;
+        margin: 0 auto;
+        padding: 2px;
+        z-index: 20;
         cursor: pointer;
     }
     .busqueda{

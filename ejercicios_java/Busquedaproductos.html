@@ -8,21 +8,45 @@
     <link rel="stylesheet" href="../icons/all.css">
     <link rel="stylesheet" href="../fonts/style.css">
     <link rel="stylesheet" href="css/Busquedaproductos.css">
+    <link rel="stylesheet" href="css/menu_busquedaproductos.css">
     <title>Tienda</title>
 </head>
 <body>
     <header>
         <div class="encabezado_menu">
             <div class="logo_menu">
-                <label><a href="#" class="inicio"><i class="fas fa-bars"></i></a></label>
+                <label class="icono-menu" onclick="mostrar();"><a href="#" class="inicio"><i class="fas fa-bars"></i></a></label>
             </div>
             <div class="barra_busqueda">
-                <input class="busqueda" id="Casila" type="text">
+                <input class="busqueda" id="Casila" type="text" placeholder="Buscar Productos, Marcas y Mas...">
             </div>
             <div class="logo_carro">
                 <label><i class="icon-shopping-cart"></i></label>
             </div>
         </div>
+        <nav id="menu_principal">
+            <div class="contenedor_titulo">
+                <h3>Explora <br> Amazon</h3>
+            </div>
+            <ul class="menu">                                       
+                <li><a href="#" class="inicio">Inicio de Amazon <i id="home" class="icon-home"></i></a></li>
+                <div class="raya"></div>
+                <li class="titulos_encabezados">Tendencias</li>
+                <li><a href="#">Productos del momento</a></li>    
+                <div class="raya"></div>         
+                <li class="titulos_encabezados">Categorias Principales</li>                            
+                <li><a href="#">Hogar</a></li>
+                <li><a href="#">Salud y productos para Hogar</a></li>
+                <li><a href="#">Libros</a></li>
+                <li><a href="#">PC</a></li>
+                <li><a href="#">Ver todos los departamentos<i class="icon-chevron-right"></i></a></li>
+                <div class="raya"></div>
+                <li class="titulos_encabezados">Opciones Adicionales</li>     
+                <li><a href="#"><i class="icon-globe"></i> Español</a></li>
+                <li><a href="#"><i class="icon-address"></i> Pedidos y Devoluciones</a></li>
+                <li><a href="#"><i class="icon-user"></i> Iniciar Sesion</a></li>
+            </ul>   
+        </nav>
     </header>
     <main>
         <div id="main_content"></div>
@@ -30,4 +54,5 @@
     <footer></footer>
 </body>
 </html>
+<script src="js/menu_busquedaproductos.js"></script>
 <script src="js/Busquedaproductos.js"></script>
