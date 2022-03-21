@@ -1,0 +1,272 @@
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.content_imagetravel{
+    background-image: url('../img/viajar-sola-1630x583.jpg');
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+footer{
+    background-color: rgb(236, 236, 238);
+}
+.content_info_trial{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    padding: 10px;
+    background-color: white;
+    gap: 5px;
+    grid-template: " titulo           imagenavion" 50px
+                   "parrafocontenido  imagenavion"   100px
+                   "parrafocontenido  imagenavion"   200px /
+                        3fr              1fr;
+    border-radius: 5px;
+}
+main{
+    background-color: rgb(238, 238, 238);
+}
+h3{
+    grid-area: titulo;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: rgb(144, 144, 144);
+}
+.parrafo_equipaje{
+    grid-area: parrafocontenido;
+    text-align: left;
+    font-size: 1.1em;
+    color: rgb(144, 144, 144);
+}
+.image_fly{
+    grid-area: imagenavion;
+    width: 650px;
+    border-radius: 5px;
+}
+/*  */
+.content_busqueda div {
+    background-color: white;
+    border: 1px solid rgb(144, 144, 144);
+    width: 220px;
+    height: 160px;
+    border-radius: 5px;
+    padding: .9em;
+    cursor: pointer;
+}
+.content_busqueda div:hover{
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+}
+h6{
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    grid-area: tituloimagencontent;
+}
+.content_busqueda span{
+    display: block;
+}
+.interaccion_servicios{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.img_servicios{
+    width: 220px;
+}
+.content_busqueda{
+    display: grid;
+    gap: 10px;
+    width: 1100px;
+    margin: 0 auto;
+    grid-template: "tituloimagencontent empty empty empty" 40px
+                   "ofertasimg serviciosimg viajesimg pasaportimg" 230px /
+                    260px        260px           260px       260px;  
+}
+.content_ofertas{
+    grid-area: ofertasimg;
+}
+.contet_servicios{
+    grid-area: serviciosimg;
+}
+.content_viajes_disponibles{
+    grid-area: viajesimg;
+}
+.content_pasaporte_colo{
+    grid-area: pasaportimg;
+}
+/*  */
+.content_info_contents div{
+    background-color: white;
+    width: 215px;
+    padding: .5em;
+    border: 1px solid rgb(144, 144, 144);
+    border-radius: 5px;
+    cursor: pointer;
+}
+h2{
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    grid-area: titulocontenedor;
+}
+.tittle_content_info{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+.parrafo_info_viaje{
+    font-size: 1.1em;
+    color: rgb(144, 144, 144);
+}
+.content_info_contents{
+    max-width: 950px;
+    display: grid;
+    gap: 10px;
+    margin: 0 auto;
+    grid-template: "titulocontenedor empty empty        empty " 30px
+                   "embarque         check preferencial menus " 70px
+                   "embarque         check preferencial menus " 70px
+                   "embarque         check preferencial menus " 70px/
+                     1fr              1fr    1fr         1fr   1fr 
+                   ;
+}
+.content_embarque{
+    grid-area: embarque;
+}
+.content_check{
+    grid-area: check;
+}
+.content_preferencial{
+    grid-area: preferencial;
+}
+.content_menus{
+    grid-area: menus;
+}
+.content_info_contents div:hover{
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+}
+/*  */
+.content_mural{
+    display: grid;
+    background-color: white;
+    padding: 1em;
+    gap: 10px;
+    grid-template: "imagenmural  titulomural"50px
+                   "imagenmural parrafomural"600px/
+                    500px         1fr; 
+}
+h4{
+    color: black;
+    font-size: 1.7em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    grid-area: titulomural;
+    text-align: center;
+}
+.parrafo_mural{
+    text-align: left;
+    font-size: 1.1em;
+    grid-area: parrafomural;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.img_mural{
+    grid-area: imagenmural;
+}
+@media only screen and (max-width: 385px){
+    .content_imagetravel{
+        background-image: url('../img/viajar-sola-500x178.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 178px;
+    }
+    /*  */
+    .content_busqueda{
+        display: grid;
+        gap: 10px;
+        width: 270px;
+        grid-template:  "tituloimagencontent  " 40px
+                        "ofertasimg " 195px
+                        "serviciosimg " 195px
+                        "viajesimg " 195px
+                        "pasaportimg " 195px /
+                        260px      ;  
+    }
+    .content_busqueda div{
+        margin: 0 auto;
+    }
+    /*  */
+    .content_info_trial{
+        max-width: 350px;
+        display: grid;
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        gap: 5px;
+        grid-template: " imagenavion  imagenavion" 50px
+                       " imagenavion  imagenavion" 80px
+                       " imagenavion  imagenavion" 20px
+                       " titulo  titulo"   30px
+                       " parrafocontenido  parrafocontenido"100px
+                       " parrafocontenido  parrafocontenido"160px /
+                            1fr              1fr;
+        border-radius: 5px;
+    }
+    h3{
+        padding: 5px;
+    }
+    .image_fly{
+        width: 100%;
+    }
+    .parrafo_equipaje{
+        font-size: 1em;
+        padding: 5px;
+    }
+    /*  */
+    .content_info_contents{
+        max-width: 350px;
+        display: grid;
+        gap: 10px;
+        grid-template: "titulocontenedor " 30px
+                       "embarque         " 100px
+                       "embarque         " 100px
+                       "check            " 100px
+                       "check            " 100px
+                       "preferencial     " 100px
+                       "preferencial     " 100px
+                       "menus            " 100px
+                       "menus            " 100px/
+                         1fr                 ;
+    }
+    .content_info_contents div{
+        margin: 0 auto;
+    }
+    
+    h2{
+        text-align: center;
+    }
+    /*  */
+    .content_mural{
+        max-width: 350px;
+        display: grid;
+        gap: 5px;
+        grid-template: "imagenmural "310px
+                       "titulomural "27px
+                       "parrafomural "460px/
+                        1fr       ; 
+    }
+    .img_mural{
+        width: 100%;
+    }
+    .parrafo_mural{
+        font-size: .8em;
+        padding: 5px;
+    }
+    h4{
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Contenedor Header */
+.content_head{
+    background-color: rgb(42, 0, 136);
+    display: grid;
+    gap: 15px;
+    padding: 0.5em;
+    grid-template: " logo login icono "80px /
+                      1fr  1fr 1fr ;
+}
+.content_name_bussines{
+    padding: 0.5em;
+    grid-area: logo;
+}
+.image_bussines:hover{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+.image_bussines{
+    margin-left: 4em;
+    cursor: pointer;
+}
+.login{
+    grid-area: login;
+    margin: 25px auto 0 auto;
+}
+.star_login{
+    background-color: rgb(63, 50, 119);
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.star_login:hover{
+    border: 1px solid whitesmoke;
+}
+.icon_burger{
+    grid-area: icono;
+    margin: 20px auto 0 auto;
+}
+.fa-bars{
+    color: whitesmoke;
+    font-size: 2em;
+    z-index: 20;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 385px){
+    .content_head{
+    display: grid;
+    padding: 2px;
+    gap: 4px;
+    grid-template: "logoempresa loginstart icono" 60px/
+                        1fr      2fr        1fr;
+    }
+    .content_name_bussines{
+        grid-area: logoempresa;
+        padding: 0;
+    }
+    .login{
+        grid-area: loginstart;
+        margin: 15px auto 0 auto;
+    }
+    .icon_burger{
+        grid-area: icono;
+        z-index: 20;
+        cursor: pointer;
+        margin: 13px auto 0 auto;
+    }
+    .image_bussines{
+        width: 150px;
+        height: 49px;
+        margin: 0;
+    }
+    .fa-bars{
+        color: whitesmoke;
+        font-size: 1.5em;
+        z-index: 20;
+    }
+    .star_login{
+        padding: 5px;
+        background-color: rgb(63, 50, 119);
+        border-radius: 20px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        font-weight: bolder;
+    }
+};
