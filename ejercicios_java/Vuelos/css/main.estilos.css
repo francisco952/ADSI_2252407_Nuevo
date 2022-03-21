@@ -204,7 +204,6 @@ h4{
         max-width: 350px;
         display: grid;
         padding: 0;
-        margin: 0;
         background-color: white;
         gap: 5px;
         grid-template: " imagenavion  imagenavion" 50px
@@ -212,7 +211,7 @@ h4{
                        " imagenavion  imagenavion" 20px
                        " titulo  titulo"   30px
                        " parrafocontenido  parrafocontenido"100px
-                       " parrafocontenido  parrafocontenido"160px /
+                       " parrafocontenido  parrafocontenido"170px /
                             1fr              1fr;
         border-radius: 5px;
     }
@@ -232,14 +231,10 @@ h4{
         display: grid;
         gap: 10px;
         grid-template: "titulocontenedor " 30px
-                       "embarque         " 100px
-                       "embarque         " 100px
-                       "check            " 100px
-                       "check            " 100px
-                       "preferencial     " 100px
-                       "preferencial     " 100px
-                       "menus            " 100px
-                       "menus            " 100px/
+                       "embarque         " 220px
+                       "check            " 220px
+                       "preferencial     " 220px
+                       "menus            " 220px/
                          1fr                 ;
     }
     .content_info_contents div{
@@ -256,7 +251,7 @@ h4{
         gap: 5px;
         grid-template: "imagenmural "310px
                        "titulomural "27px
-                       "parrafomural "460px/
+                       "parrafomural "470px/
                         1fr       ; 
     }
     .img_mural{
