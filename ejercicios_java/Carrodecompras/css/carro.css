@@ -6,6 +6,7 @@
     width: 95%;
     max-width: 600px;
     padding: 10px;
+    margin: 0 auto;
     grid-template:
     'subtotal subtotal' 
     'espacio espacio'
@@ -98,4 +99,31 @@ h2{
 }
 .menos, .suma, .valores {
     display: inline-block;
+}
+@media only screen and (max-width: 385px){
+.contenedor{
+    max-width: 350px;
+    padding: 5px;
+    gap: 4px;
+    grid-template:
+    'subtotal subtotal' 
+    'espacio espacio'
+    'imagen descripcion'
+    'puntos boton';
+}
+h1, h2, .valor, .tipo_tapa{
+    font-size: 1.2em;
+}
+h3{
+    font-size: 1em;
+}
+.imagen_fond{
+    width: 180px;
+}
+
+.abajo, .arriba{
+    font-size: .8em;
+    font-weight: bolder;
+    width: 110px;
+}
 }
