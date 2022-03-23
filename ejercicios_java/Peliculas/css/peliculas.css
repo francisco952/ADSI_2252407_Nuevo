@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+header{
+    background-color: #252440 /* cadetblue */;
+}
+footer{
+    background-color: #5497a7;
+    text-align: center;
+}
+img{
+    border-radius: 5px;
+}
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content_head{
+    background-color: #50858b;
+}
+#show_movie{
+    padding: 2em;
+    margin-left: 2em;
+}
+.content_body{
+    background-color: whitesmoke;
+}
+.kills, .atrapame, .superbad, .mad, .scream, .perros{
+    display: inline-block;
+}
+.tittle_main{
+    margin: center;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    color: white;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    color: white;
+    font-size: 1em; 
+}
+.tittle_main, .logo, .logo2{
+    display: inline-block;
+}
+.inicio{
+    color: white;
+}
+.inicio:hover{
+    color: silver;
+}
+.fa-brands{
+    display: none;
+}
+.fa-bars{
+    font-size: 3em;
+    border-radius: 5px;
+    padding: 0.2em;
+    cursor: pointer;
+}
+.content_body{
+    background-color: #62a8ac;
+}
+.kills, .atrapame, .superbad, .mad, .scream, .perros{
+    width: 330px;
+    height: 510px;
+    padding: 0.5em;
+}
+.kills{
+    grid-area: article1;
+    width: 320px;
+}
+.atrapame{
+    grid-area: article2;
+}
+.superbad{
+    grid-area: article3;
+}
+.mad{
+    grid-area: article4;
+}
+.scream{
+    grid-area: article5;
+}
+.perros{
+    grid-area: article6;
+}
+.kills, .atrapame, .superbad, .mad, .scream, .perros{
+    margin: 0 auto;
+}
+.content_body{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template: " article1 article2 article3"  520px  
+                   " article4 article5 article6"  520px  /
+                   1fr 1fr 1fr;
+}
+.icon-twitter, .icon-facebook{
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+}
+.twitter, .facebook, .derechos{
+    display: inline-block;
+    padding: 0.5em;
+}
+@media only screen and (max-width: 385px){
+    .fa-bars{
+        font-size: 2em;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    .content_body{
+        width: 360px;
+        gap: 7px;
+        grid-template:  " article1 "  380px  
+                        " article2 "   380px 
+                        " article3 "  380px  
+                        " article4 "   380px 
+                        " article5 "   380px 
+                        " article6"    380px/
+                             auto;
+    }
+    .kills, .atrapame, .superbad, .mad, .scream, .perros{
+        text-align: center;
+    }
+    #show_movie{
+        margin-left: 0;
+        padding: .5em;
+        width: 340px;
+    }
+    .movie_cont{
+        width: 230px;
+    }
+    h2{
+        font-size: .8em;
+    }
+}
