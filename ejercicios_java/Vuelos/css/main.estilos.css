@@ -13,6 +13,9 @@ footer{
 }
 #content_precios{
     padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .content_info_trial{
     max-width: 1200px;
@@ -192,6 +195,10 @@ h4{
         height: 178px;
     }
     /*  */
+    #content_precios{
+        display: block;
+    }
+    /*  */
     .content_busqueda{
         display: grid;
         gap: 10px;
@@ -240,14 +247,13 @@ h4{
         grid-template: "titulocontenedor " 30px
                        "embarque         " 220px
                        "check            " 220px
-                       "preferencial     " 220px
+                       "preferencial     " 230px
                        "menus            " 220px/
                          1fr                 ;
     }
     .content_info_contents div{
         margin: 0 auto;
     }
-    
     h2{
         text-align: center;
     }

@@ -16,17 +16,43 @@ let horaSalida1Str = horaSalida1.getHours().toString() + ":" + horaSalida1.getMi
 let horaLlegada1 = new Date (2022, 03, 18, 12, 55, 0);
 let horaLlegada1str = horaLlegada1.getHours().toString() + ":" + horaLlegada1.getMinutes().toString();
 
+let tiempo1 = horaLlegada1.getHours() - horaSalida1.getHours();
+let minuto1 = horaSalida1.getMinutes();
+let minutos1 = horaLlegada1.getMinutes();
+let minutosrestantes1 = (minutos1-minuto1);
+let tiempoduracion1 = tiempo1 +"h y "+ minutosrestantes1+"m"
+/* =================================================================================================== */
+
 let horaSalida2 = new Date (2022, 04, 23, 10, 15, 0);
 let horaSalida2Str = horaSalida2.getHours().toString() + ":" + horaSalida2.getMinutes().toString();
 
-let horaLlegada2 = new Date (2022, 04, 25, 15, 59, 0);
+let horaLlegada2 = new Date (2022, 04, 23, 11, 59, 0);
 let horaLlegada2str = horaLlegada2.getHours().toString() + ":" + horaLlegada2.getMinutes().toString();
+
+let tiempo2 = horaLlegada2.getHours() - horaSalida2.getHours();
+let minuto2 = horaSalida2.getMinutes();
+let minutos2 = horaLlegada2.getMinutes();
+let minutosrestantes2 = (minutos2-minuto2);
+let tiempoduracion2 = tiempo2 +"h y "+ minutosrestantes2+"m";
+
+/* =================================================================================================== */
 
 let horaSalida3 = new Date (2022, 05, 23, 10, 15, 0);
 let horaSalida3Str = horaSalida3.getHours().toString() + ":" + horaSalida3.getMinutes().toString();
 
-let horaLlegada3 = new Date (2022, 05, 26, 15, 59, 0);
+let horaLlegada3 = new Date (2022, 05, 23, 16, 59, 0);
 let horaLlegada3str = horaLlegada3.getHours().toString() + ":" + horaLlegada3.getMinutes().toString();
+
+let tiempo3 = horaLlegada3.getHours() - horaSalida3.getHours();
+let minuto3 = horaSalida3.getMinutes();
+let minutos3 = horaLlegada3.getMinutes();
+let minutosrestantes3 = (minutos3-minuto3);
+let tiempoduracion3 = tiempo3 +"h y "+ minutosrestantes3+"m";
+
+
+function calculo(horasalida, horallegada){
+    
+}
 
 var vuelo=[
     {
@@ -36,23 +62,26 @@ var vuelo=[
     "lugarsalida" : "Medellin",
     "estadovalor" : "Mas Económico",
     "valorvuelo" : "cop 375.000",
-    "tipovuelo" : "Directo"},
+    "tipovuelo" : "Directo",
+    "tiempodura": tiempoduracion1},
     {
     "horaSalida" : horaSalida2Str,
     "horaLlegada" : horaLlegada2str,
-    "lugardestino" : "Bogota",
-    "lugarsalida" : "Neiva",
+    "lugardestino" : "Pitalito",
+    "lugarsalida" : "BGT",
     "estadovalor" : "Mas Económico",
-    "valorvuelo" : "cop 175.000",
-    "tipovuelo" : "Directo"},
+    "valorvuelo" : "cop 200.000",
+    "tipovuelo" : "Directo",
+    "tiempodura": tiempoduracion2},
     {
     "horaSalida" : horaSalida3Str,
     "horaLlegada" : horaLlegada3str,
-    "lugardestino" : "Payu",
-    "lugarsalida" : "San Tander",
+    "lugardestino" : "BGT",
+    "lugarsalida" : "C.D Mexico",
     "estadovalor" : "Mas Económico",
-    "valorvuelo" : "cop 275.000",
-    "tipovuelo" : "Directo"}
+    "valorvuelo" : "cop 700.000",
+    "tipovuelo" : "Directo",
+    "tiempodura": tiempoduracion3}
 ];
 
 function mostrarvuelo(vuelo){
@@ -85,6 +114,8 @@ function mostrarvuelo(vuelo){
     /*  */
     let spanduracion = document.createElement('label');
     spanduracion.setAttribute("class","duracion");
+    let tiempoduravuelo = document.createElement('label');
+    tiempoduravuelo.setAttribute("class","duracionvuelo")
     /*  */
     let espacio = document.createElement('br');
     /* Valor de las variables */
@@ -96,6 +127,7 @@ function mostrarvuelo(vuelo){
     let textovalorlvuelo = document.createTextNode(vuelo.valorvuelo);
     let textotipovuelo = document.createTextNode(vuelo.tipovuelo);
     let textoduracion = document.createTextNode("Duración");
+    let textduravuelo = document.createTextNode(vuelo.tiempodura);
     /* Asignar Hijos */
     /* Asignacion contenedor */
     contentmain.appendChild(espacio)
@@ -108,6 +140,7 @@ function mostrarvuelo(vuelo){
     contentsecond.appendChild(spanvalorvuelo);
     contentsecond.appendChild(spantipovuelo);
     contentsecond.appendChild(spanduracion);
+    contentsecond.appendChild(tiempoduravuelo);
     /* Asignacion valores */
     
     spansalida.appendChild(textosalida);
@@ -118,6 +151,7 @@ function mostrarvuelo(vuelo){
     spanvalorvuelo.appendChild(textovalorlvuelo);
     spantipovuelo.appendChild(textotipovuelo);
     spanduracion.appendChild(textoduracion);
+    tiempoduravuelo.appendChild(textduravuelo);
     /* Asignacion de clases y identificadores */
     lineabaja.setAttribute("class","rayavuelo");
 }

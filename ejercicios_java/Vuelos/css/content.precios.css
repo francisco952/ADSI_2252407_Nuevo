@@ -10,11 +10,20 @@
     display: grid;
     grid-template: "bloque8 empty empty" auto
                     "bloque1 bloque6 bloque2" auto
-                    "bloque3 empty2 bloque4" auto
+                    "bloque3 duracionvuelo bloque4" auto
                     "bloque9 bloque9 bloque9" auto
                     "bloque5 empty3 bloque7"auto/
                         170px 110px  auto;
-                        border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#cont_child:hover{
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
+}
+.duracionvuelo{
+    grid-area: duracionvuelo;
+    text-align: center;
+    font-size: 1.2em;
 }
 .horasalida{
     grid-area: bloque1;
@@ -35,7 +44,7 @@
 .lugarsalida, .horallegada, .precio{
     text-align: right;
 }
-.horasalida, .horallegada, .lugardestino, .lugarsalida, .precio, .tipovuelo, .duracion{
+.horasalida, .horallegada, .lugardestino, .lugarsalida, .precio, .tipovuelo, .duracion, .duracionvuelo{
     padding: .5em;
 }
 .lugardestino{
@@ -76,13 +85,25 @@
 }
 @media only screen and (max-width: 385px){
     #cont_child{
-        gap: 10px;
-        display: grid;
-        grid-template: "bloque8 empty empty" 80px
-                        "bloque1 bloque6 bloque2" 80px
-                        "bloque3 empty bloque4" 80px
-                        "bloque9 bloque9 bloque9" 80px
-                        "bloque5 empty bloque7"80px/
-                            70px 90px  70px;
+        width: 330px;
+        gap: 3px;
+        grid-template: "bloque8 empty empty" auto
+                    "bloque1 bloque6 bloque2" auto
+                    "bloque3 duracionvuelo bloque4" auto
+                    "bloque9 bloque9 bloque9" auto
+                    "bloque5 empty3 bloque7"auto/
+                        auto auto  auto;}
+    .horasalida, .horallegada, .lugardestino, .lugarsalida, .precio, .tipovuelo, .duracion, .duracionvuelo{
+    padding: .3em;
+    font-size: .9em;
+    font-weight: bolder;
+    }  
+    .estadovalor{
+        font-size: 1em;
     }
+     .rayavuelo{
+         width: 300px;
+         margin: 0;
+         margin-left: 10px;
+     }
 }
