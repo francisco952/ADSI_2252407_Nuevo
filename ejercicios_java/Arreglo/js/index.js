@@ -1,8 +1,12 @@
 class vuelos{
-    constructor(horaSalida, horaLlegada, destino){
+    constructor(horaSalida, horaLlegada, lugardestino, lugarsalida,estadovalor,valorvuelo, tipovuelo){
         this.horaSalida = horaSalida;
         this.horaLlegada = horaLlegada;
-        this.destino = destino;
+        this.lugardestino = lugardestino;
+        this.lugarsalida = lugarsalida;
+        this.estadovalor = estadovalor;
+        this.valorvuelo = valorvuelo;
+        this.tipovuelo = tipovuelo;
     }
 }
 
@@ -28,54 +32,100 @@ var vuelo=[
     {
     "horaSalida" : horaSalida1Str,
     "horaLlegada" : horaLlegada1str,
-    "destino" : "ADZ"},
+    "lugardestino" : "BGT",
+    "lugarsalida" : "Medellin",
+    "estadovalor" : "Mas Económico",
+    "valorvuelo" : "cop 375.000",
+    "tipovuelo" : "Directo"},
     {
     "horaSalida" : horaSalida2Str,
     "horaLlegada" : horaLlegada2str,
-    "destino" : "Payu"},
+    "lugardestino" : "Bogota",
+    "lugarsalida" : "Neiva",
+    "estadovalor" : "Mas Económico",
+    "valorvuelo" : "cop 175.000",
+    "tipovuelo" : "Directo"},
     {
-        "horaSalida" : horaSalida3Str,
-        "horaLlegada" : horaLlegada3str,
-        "destino" : "Payu"}
+    "horaSalida" : horaSalida3Str,
+    "horaLlegada" : horaLlegada3str,
+    "lugardestino" : "Payu",
+    "lugarsalida" : "San Tander",
+    "estadovalor" : "Mas Económico",
+    "valorvuelo" : "cop 275.000",
+    "tipovuelo" : "Directo"}
 ];
-/* 
-console.log("Salida "+vuelo[0].horaSalida+" Llegada "+vuelo[0].horaLlegada+" Destino"+vuelo[0].destino  ) */
 
-function mostrar(vuelo){
+function mostrarvuelo(vuelo){
     let contentmain = document.getElementById('content_main');
-    let contenedorsecond = document.createElement('div');
-    contentmain.appendChild(contenedorsecond);
-    let spansalida = document.createElement('span');
-    let spanllegada = document.createElement('span');
-    let spandestino = document.createElement('span');
+    let contentsecond = document.createElement('div');
+    contentsecond.setAttribute("id","cont_child");
+    let lineabaja = document.createElement('div');
+    contentmain.appendChild(contentsecond);
+    /* Variables que se crean */
+    let spansalida = document.createElement('label');
+    spansalida.setAttribute("class","horasalida");
+    /*  */
+    let spanllegada = document.createElement('label');
+    spanllegada.setAttribute("class","horallegada");
+    /*  */
+    let spanlugardestino = document.createElement('label');
+    spanlugardestino.setAttribute("class","lugardestino");
+    /*  */
+    let spanlugarsalida = document.createElement('label');
+    spanlugarsalida.setAttribute("class","lugarsalida");
+    /*  */
+    let spanestadovalor = document.createElement('label');
+    spanestadovalor.setAttribute("class","estadovalor");
+    /*  */
+    let spanvalorvuelo = document.createElement('label');
+    spanvalorvuelo.setAttribute("class","precio")
+    /*  */
+    let spantipovuelo = document.createElement('label');
+    spantipovuelo.setAttribute("class","tipovuelo");
+    /*  */
+    let spanduracion = document.createElement('label');
+    spanduracion.setAttribute("class","duracion");
+    /*  */
+    let espacio = document.createElement('br');
+    /* Valor de las variables */
     let textosalida = document.createTextNode(vuelo.horaSalida);
     let textollegada = document.createTextNode(vuelo.horaLlegada);
-    let textodestino = document.createTextNode(vuelo.destino);
+    let textolugardestino = document.createTextNode(vuelo.lugardestino);
+    let textolugarsalida = document.createTextNode(vuelo.lugarsalida);
+    let textoestadovalor = document.createTextNode(vuelo.estadovalor);
+    let textovalorlvuelo = document.createTextNode(vuelo.valorvuelo);
+    let textotipovuelo = document.createTextNode(vuelo.tipovuelo);
+    let textoduracion = document.createTextNode("Duración");
+    /* Asignar Hijos */
+    /* Asignacion contenedor */
+    contentmain.appendChild(espacio)
+    contentsecond.appendChild(lineabaja);
+    contentsecond.appendChild(spansalida);
+    contentsecond.appendChild(spanllegada);
+    contentsecond.appendChild(spanlugardestino);
+    contentsecond.appendChild(spanlugarsalida);
+    contentsecond.appendChild(spanestadovalor);
+    contentsecond.appendChild(spanvalorvuelo);
+    contentsecond.appendChild(spantipovuelo);
+    contentsecond.appendChild(spanduracion);
+    /* Asignacion valores */
+    
     spansalida.appendChild(textosalida);
     spanllegada.appendChild(textollegada);
-    spandestino.appendChild(textodestino);
-    let labeltitulolsalida = document.createElement('label');
-    let labeltitulollegada = document.createElement('label');
-    let labeltituloldestino = document.createElement('label');
-    let textotsalida = document.createTextNode("salida");
-    let textotllegada = document.createTextNode("llegada");
-    let textotdestino = document.createTextNode("destino");
-    labeltitulolsalida.appendChild(textotsalida);
-    labeltitulollegada.appendChild(textotllegada);
-    labeltituloldestino.appendChild(textotdestino);
-    labeltitulolsalida.appendChild(spansalida);
-    labeltitulollegada.appendChild(spanllegada);
-    labeltituloldestino.appendChild(spandestino);
-    contenedorsecond.appendChild(labeltitulolsalida);
-    contenedorsecond.appendChild(labeltitulollegada);
-    contenedorsecond.appendChild(labeltituloldestino);
+    spanlugardestino.appendChild(textolugardestino);
+    spanlugarsalida.appendChild(textolugarsalida);
+    spanestadovalor.appendChild(textoestadovalor);
+    spanvalorvuelo.appendChild(textovalorlvuelo);
+    spantipovuelo.appendChild(textotipovuelo);
+    spanduracion.appendChild(textoduracion);
+    /* Asignacion de clases y identificadores */
+    lineabaja.setAttribute("class","rayavuelo");
 }
-
 function consolear(){
     limpiarcontenedor();
-    mostrar(vuelo[0]);
-    mostrar(vuelo[1]);
-    mostrar(vuelo[2]);
+    mostrarvuelo(vuelo[0]);
+    mostrarvuelo(vuelo[1]);
+    mostrarvuelo(vuelo[2]);
 }
 function limpiarcontenedor(){
     document.getElementById('content_main').innerHTML = "";

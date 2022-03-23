@@ -1,0 +1,47 @@
+
+#cont_child{
+    display: grid;
+    grid-template: "bloque8 empty empty" 80px
+                    "bloque1 bloque6 bloque2" 80px
+                    "bloque3 empty2 bloque4" 80px
+                    "bloque9 bloque9 bloque9" 80px
+                    "bloque5 empty3 bloque7" 80px /
+                        70px 70px  70px;
+}
+.horasalida{
+    color: blue;
+    grid-area: bloque1;
+}
+.horallegada{
+    color: sienna;
+    grid-area: bloque2;
+}
+.lugardestino{
+    color: springgreen;
+    grid-area: bloque3;
+}
+.lugarsalida{
+    color: violet;
+    grid-area: bloque4;
+}
+.tipovuelo{
+    color: red;
+    grid-area: bloque5;
+}
+.duracion{
+    color: yellowgreen;
+    grid-area: bloque6;
+}
+.precio{
+    color: darkgoldenrod;
+    grid-area: bloque7;
+}
+.estadovalor{
+    background-color: rgb(0, 139, 139);
+    color: white;
+    grid-area: bloque8;
+}
+.rayavuelo{
+    border-bottom: 1px solid black;
+    grid-area: bloque9;
+}

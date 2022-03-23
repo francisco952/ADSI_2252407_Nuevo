@@ -1,0 +1,88 @@
+
+.content_precios{
+    display: inline-block;
+    padding: 5px;
+}
+#cont_child{
+    max-width: 450px;
+    background-color: white;
+    margin: 0 auto;
+    display: grid;
+    grid-template: "bloque8 empty empty" auto
+                    "bloque1 bloque6 bloque2" auto
+                    "bloque3 empty2 bloque4" auto
+                    "bloque9 bloque9 bloque9" auto
+                    "bloque5 empty3 bloque7"auto/
+                        170px 110px  auto;
+                        border-radius: 5px;
+}
+.horasalida{
+    grid-area: bloque1;
+}
+.horallegada{
+    grid-area: bloque2;
+}
+.horallegada, .horasalida, .precio{
+    color: rgb(42, 0, 136);
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lugardestino, .lugarsalida, .duracion{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+.lugarsalida, .horallegada, .precio{
+    text-align: right;
+}
+.horasalida, .horallegada, .lugardestino, .lugarsalida, .precio, .tipovuelo, .duracion{
+    padding: .5em;
+}
+.lugardestino{
+    grid-area: bloque3;
+}
+.lugarsalida{
+    grid-area: bloque4;
+}
+.tipovuelo{
+    color: rgb(238, 238, 238);
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: bloque5;
+}
+.duracion{
+    grid-area: bloque6;
+    text-align: center;
+}
+.precio{
+    grid-area: bloque7;
+}
+.estadovalor{
+    background-color: rgb(0, 139, 139);
+    width: 150px;
+    color: white;
+    padding: .5em;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    grid-area: bloque8;
+}
+.rayavuelo{
+    border-bottom: 3px solid rgb(238, 238, 238);
+    width: 420px;
+    grid-area: bloque9;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 385px){
+    #cont_child{
+        gap: 10px;
+        display: grid;
+        grid-template: "bloque8 empty empty" 80px
+                        "bloque1 bloque6 bloque2" 80px
+                        "bloque3 empty bloque4" 80px
+                        "bloque9 bloque9 bloque9" 80px
+                        "bloque5 empty bloque7"80px/
+                            70px 90px  70px;
+    }
+}

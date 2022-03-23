@@ -1,7 +1,7 @@
-body{
+/* body{
     display: grid;
     grid-template-rows: auto 1fr auto;
-}
+} */
 .content_imagetravel{
     background-image: url('../img/viajar-sola-1630x583.jpg');
     width: 100%;
@@ -10,6 +10,9 @@ body{
 }
 footer{
     background-color: rgb(236, 236, 238);
+}
+#content_precios{
+    padding: 1em;
 }
 .content_info_trial{
     max-width: 1200px;
@@ -73,6 +76,10 @@ h6{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     text-align: center;
+}
+.interaccion_servicios:hover{
+    color: rgb(42, 0, 136);
+    text-decoration: underline;
 }
 .img_servicios{
     width: 220px;
