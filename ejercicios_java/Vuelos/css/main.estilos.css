@@ -1,7 +1,7 @@
-/* body{
+body{
     display: grid;
     grid-template-rows: auto 1fr auto;
-} */
+}
 .content_imagetravel{
     background-image: url('../img/viajar-sola-1630x583.jpg');
     width: 100%;
@@ -186,6 +186,16 @@ h4{
 .img_mural{
     grid-area: imagenmural;
 }
+h5{
+    padding: 1em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+.icon-creative-commons{
+    font-size: 1.2em;
+}
 @media only screen and (max-width: 385px){
     .content_imagetravel{
         background-image: url('../img/viajar-sola-500x178.jpg');
@@ -261,8 +271,8 @@ h4{
         gap: 5px;
         grid-template: "imagenmural "310px
                        "titulomural "27px
-                       "parrafomural "470px/
-                        1fr       ; 
+                       "parrafomural "auto/
+                        auto       ; 
     }
     .img_mural{
         width: 100%;
@@ -273,5 +283,8 @@ h4{
     }
     h4{
         font-size: 1.2em;
+    }
+    h5, .icon-creative-commons{
+        font-size: 1em;
     }
 }
