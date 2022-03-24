@@ -254,7 +254,7 @@ h5{
         grid-template: "titulocontenedor " 30px
                        "embarque         " 220px
                        "check            " 220px
-                       "preferencial     " 230px
+                       "preferencial     " auto
                        "menus            " 220px/
                          1fr                 ;
     }
