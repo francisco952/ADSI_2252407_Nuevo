@@ -31,10 +31,10 @@
     padding: 8px;
     border-radius: 100px;
 }
-.color_burguer{
+/* .color_burguer{
     color: black;
     transition: all .8s;
-}
+} */
 .icon_burger{
     z-index: 20;
 }
@@ -49,7 +49,7 @@
     z-index: 10;
     left: -100%;
     top: 0;
-    width: 1515px;
+    width: 50%;
     transition: all .5s;
 }
 #menu_principal.mostrarNav {
