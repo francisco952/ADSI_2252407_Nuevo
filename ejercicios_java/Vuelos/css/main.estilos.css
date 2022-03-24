@@ -198,6 +198,11 @@ h5{
 .icon-creative-commons{
     font-size: 1.2em;
 }
+@media only screen and (max-width: 1300px){
+    #content_precios{
+        display: block;
+    }
+}
 @media only screen and (max-width: 385px){
     .content_imagetravel{
         background-image: url('../img/viajar-sola-500x178.jpg');
