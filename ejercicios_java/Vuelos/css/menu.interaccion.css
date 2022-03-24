@@ -47,7 +47,7 @@
     position: absolute;
     height: 100%;
     z-index: 10;
-    left: -100em;
+    left: -120em;
     top: 0;
     width: 100%;
     transition: all .5s;
