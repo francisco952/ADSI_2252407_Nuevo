@@ -1,6 +1,6 @@
+window.onload = Crearcontent;
 const lupa = document.getElementById('idLupa');
 lupa.addEventListener("click", miFuncion);
-
 
 function cerrarmenu(){
     limpiarheader();
@@ -62,4 +62,6 @@ function Crearcontent(){
     content_main.appendChild(iconocarro);
     content_main.appendChild(imagen);
     numerocarro.appendChild(textnumerocarro);
+    const lupa = document.getElementById('idLupa');
+    lupa.addEventListener("click", miFuncion);
 }

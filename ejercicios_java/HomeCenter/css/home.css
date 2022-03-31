@@ -8,6 +8,58 @@
 }
 .content_main{
     display: grid;
+    padding: .5em;
+    grid-template: " hamburguesa logo empty busqueda numerocompra carrocompra usuario" 50px/ 1fr 1fr 4fr 1fr 1fr 1fr 1fr ;
+}
+.hamburguesa, .busqueda, .usuario{
+    text-align: center;
+}
+.hamburguesa{
+    grid-area: hamburguesa;
+}
+.busqueda{
+    grid-area: busqueda;
+}
+.usuario{
+    grid-area: usuario;
+}
+.numero_compra{
+    grid-area: numerocompra;
+    background-color: darkred;
+    border-radius: 100px;
+    width: 18px;
+    text-align: center;
+    color: whitesmoke;
+    margin-left: 60px;
+    padding: 1em;
+}
+.caro_compra{
+    grid-area: carrocompra;
+}
+.logo{
+    width: 70px;
+    grid-area: logo;
+}
+.fa-bars,.icon-magnifying-glass, .icon-user, .icon-shopping-cart{
+    font-size: 1.8em;
+    padding: .4em;
+}
+/* Medidas de Buscador */
+.flexdireccion{
+    padding: .5em;
+    display: flex;
+    align-items: center;
+}
+.glass, .cross{
+    font-size: 1.8em;
+    font-weight: 200;
+}
+#textbus{
+    width: 100%;
+    padding: .1em;
+    padding-left: 10px;
+    outline: none;
+    border: none;
 }
 
 @media only screen and (max-width: 385px){
@@ -44,7 +96,7 @@
         padding: .5em;
         text-align: center;
         color: whitesmoke;
-       /*  margin-left: 25px; */
+        margin-left: 0;
     }
     .caro_compra{
         grid-area: carrocompra;
@@ -55,20 +107,11 @@
         padding: .2em;
     }
     /* =============================================================================== */
-    .flexdireccion{
-        padding: .5em;
-        display: flex;
-        align-items: center;
-    }
     .glass, .cross{
         font-size: 1.4em;
         font-weight: 200;
     }
     #textbus{
         width: 18pc;
-        padding: .1em;
-        padding-left: 10px;
-        outline: none;
-        border: none;
     }
 }
