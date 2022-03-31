@@ -43,8 +43,10 @@ ul{
     }
     .tittle_head{
         font-size: 1em;
+        padding: .4em;
     }
     .list_inside{
         font-size: .8em;
+        padding: .3em;
     }
 }
