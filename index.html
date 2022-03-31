@@ -10,55 +10,55 @@
     <link rel="stylesheet" href="css/index.css">
     <!-- Iconos -->
     <link rel="stylesheet" href="icons/all.css">
-    <!-- Estilos de letras -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Ubuntu:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <!-- Iconos leves -->
+    <link rel="stylesheet" href="fonts/style.css">
     <!--  -->
-    <title>Baby Sueños</title>
+    <title>Portafolio</title>
 </head>
 <body>
-    <label class="icono-menu" onclick="mostrarMenu()"><i class="fas fa-bars"></i></label>
-      <nav id="menu-principal">
-        <ul class="menu">
-          <li><a href="#">Productos</a></li>
-          <li><a href="../Producto/contactenos.html">Contactenos</a></li>
-          <li><a href="../Producto/Promociones.html">Promociones</a></li>
-          <li><a href="../Producto//layouts.html">Layouts</a></li>
-          <li><a href="../Producto/menus.html">Menus</a></li>
-          <li><a href="../Producto/calculadora.html">Calculadora</a></li>
-          <li><a href="../Producto/ejercicio1.html">Iniciar Sesion</a></li>
-          <li><a href="#">Calendario</a></li>
-          <li><a href="../Producto/startbootstrap-sb-admin-gh-pages/index.html">Boostrap</a></li>
-          <li><a href="../Producto/spa.html">Spa</a></li>
-          <li><a href="../Producto/formulario_avanzado.html">Formulario Avanzado</a></li>
-          <li><a href="../Producto/menu-responsive.html">Menu Responsive</a></li>
-          <li><a href="../Producto/menu_vert_responsive.html">Menu Res Vertical</a></li>
-          <li><a href="./ejercicios_java/Peliculas/Peliculas.html">Peliculas</a></li>
-          <li><a href="./ejercicios_java/Carrodecompras/carro.html">Carro</a></li>
-          <li><a href="./ejercicios_java/Ejercicio_nodos.html">Productos</a></li>
-          <li><a href="./ejercicios_java/Busquedaproductos/Busquedaproductos.html">Busqueda</a></li>
-          <li><a href="./ejercicios_java/Vuelos/vuelos.html">Vuelos</a></li>
-          <li><a href="./ejercicios_java/HomeCenter/home.html">Homecenter</a></li>
-        </ul>
-      </nav>
-    <main>
-      <div class="contenedor_principal">
-        <div class="contenedor_secundario">
-          <div class="titulo">
-            <h1>Baby Sueños</h1>
-          </div>
-          <div>
-            <img class="imagen_fondo" src="../Producto/img/'bebe-1000x616.jpg'.jfif" alt="bebe-1000x616" class="bebe">
-          </div>
-        </div>
+  <header>
+    <div class="encabezado">
+      <div class="logo_menu">
+        <label class="icono-menu"><a href="#" class="inicio" onclick="Mostrar();"><i class="fas fa-bars"></i></a></label>
       </div>
-    </main>
+    </div>
+    <nav id="nav">
+      <ul class="list">
+        <li class="tittle_head "><a href="#">Boostrap</a>
+          <li class="list_inside"><a href="./startbootstrap-sb-admin-gh-pages/index.html">Inicio</a></li>
+            <li class="list_inside"><a href="./facturacion.html">Facturacion</a></li>
+        </li>
+        <li class="tittle_head"><a href="#">Tipos de Menu</a>
+            <li class="list_inside"><a href="./Tipos de Menus/menus.html">Menu Hereditario</a></li>
+            <li class="list_inside"><a href="./Tipos de Menus/menu-responsive.html">Menu Res 1</a></li>
+            <li class="list_inside"><a href="./Tipos de Menus/menu_responsive2.html">Menu Res 2</a></li>
+            <li class="list_inside"><a href="./Tipos de Menus/menu_vert_responsive.html">Menu Res Vertical</a></li>
+            <li class="list_inside"><a href="./Tipos de Menus/ejercicio2.html">Menu KAYAK</a></li>
+        </li>
+        <li class="tittle_head"><a href="#">Ejercicios Flex</a>
+            <li class="list_inside"><a href="./Ejercicios Flex/ejercicio1.html">Login</a></li>
+        </li>
+        <li class="tittle_head"><a href="#">Ejercicios Grid</a>
+            <li class="list_inside"><a href="./Ejercicios Grid/calendario.html">Calendario</a></li>
+            <li class="list_inside"><a href="./Ejercicios Grid/grid-desafio.html">Grid Desafio</a></li>
+            <li class="list_inside"><a href="./Ejercicios Grid/spa.html">Spa</a></li>
+        </li>
+        <li class="tittle_head"><a href="#">Ejercicios JavaScript</a>
+            <li class="list_inside"><a href="./ejercicios_java/Peliculas/Peliculas.html">Pelicula</a></li>
+            <li class="list_inside"><a href="./ejercicios_java/Carrodecompras/carro.html">Carro de Compras</a></li>
+            <li class="list_inside"><a href="./ejercicios_java/Busquedaproductos/Busquedaproductos.html">Busqueda Producto</a></li>
+            <li class="list_inside"><a href="./ejercicios_java/Vuelos/vuelos.html">Vuelos</a></li>
+            <li class="list_inside"><a href="./ejercicios_java/HomeCenter/home.html">Home Center</a></li>
+            <li class="list_inside"><a href="#"></a></li>
+        </li>
+      </ul>
+    </nav>
+  </header>
 </body>
 </html>
 <script>
-  function mostrarMenu(){
-    var navMostrar = document.getElementById("menu-principal");
-    navMostrar.classList.toggle('mostrarNav');
-}
+  function Mostrar(){
+    let mostrar = document.getElementById('nav');
+    mostrar.classList.toggle('MostrarNAv')
+  }
 </script>

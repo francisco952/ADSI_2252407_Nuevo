@@ -1,87 +1,50 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-nav {
-    background-color: #5d1372;
-    position: absolute;
-    z-index: 10;
-    left: -20em;
+nav{
+    width: 280px;
     top: 0;
     transition: all .5s;
+    position: absolute;
+    left: -20em;
+    background-color: rgba(255, 255, 255, .5);
 }
-.menu {
-    list-style: none;
-    line-height: 60px;
-    margin: 7em auto 0 auto;
-    width: 16em;
-    padding-left: .1em;
-}
-.menu a {
-    color: #fff;
-    font-size: 1.1em;
+a{
     text-decoration: none;
-    display: block;
-    padding-left: 1.5em;
-    width: 100%;
-    transition: all .2s;
+    list-style: none;
+    color: rgb(11, 11, 11);
 }
-.menu li {
-    box-shadow: 3px 0 rgba(255, 255, 255, .2) inset;
-    padding-left: .8em;
-    margin-bottom: 5px;
+ul{
+    margin-top: 4em;
 }
-.menu li:hover {
-    box-shadow: 15em 0 rgb(255, 255, 255, .2) inset;
+.tittle_head, .list_inside{
+    font-family: Arial, Helvetica, sans-serif;
 }
-.fas {
-    color: plum;
-    font-size: 1.3em;
-    padding-right: .3em;
+.tittle_head{
+    font-weight: bolder;
+    margin-left: .3em;
+    font-size: 1.2em;
+    padding: 0.5em;
 }
-.fa-bars {
-    z-index: 20;
-    position: absolute;
+.list_inside{
+    margin-left: .5em;
+    padding: 0.4em;
+    font-weight: 400;
 }
-label.icono-menu {
-    position: absolute;
-    z-index: 20;
-    top: 50px;
-    left: 40px;
-    cursor: pointer;
+.list_inside:hover{
+    text-decoration:underline;
 }
-nav.mostrarNav {
+.MostrarNAv{
     left: 0;
 }
-@media only screen and (max-width: 375px){
-    nav {
-        background-color: #5d1372;
-        position: absolute;
-        z-index: 10;
-        left: -20em;
-        top: 0;
-        transition: all .5s;
-        width: 220px;
+@media only screen and (max-width: 385px){
+    nav{
+        width: 200px;
     }
-    .menu a {
-        color: #fff;
+    ul{
+        margin-top: 2em;
+    }
+    .tittle_head{
         font-size: 1em;
-        text-decoration: none;
-        display: block;
-        padding-left: 1em;
-        transition: all .2s;
     }
-    .menu {
-        list-style: none;
-        line-height: 50px;
-        margin: 7em auto 0 auto;
-    }
-    .menu li {
-        box-shadow: 3px 0 rgba(255, 255, 255, .2) inset;
-        padding-left: 0.5em;
-        margin-bottom: 5px;
-    }
-    .menu li:hover {
-        box-shadow: 15em 0 rgb(255, 255, 255, .2) inset;
+    .list_inside{
+        font-size: .8em;
     }
 }
