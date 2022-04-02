@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    background-image: url('../img/guts.jpg');
+    background-image: url('../img/Noruega-2077x1403-.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -30,8 +30,7 @@ body{
 }
 @media only screen and (max-width: 385px){
     body{
-        background-image: url('../img/guts-vertical-567.jpg');
-        height: 100%;
+        background-image: url('../img/Noruega-911x1267-.jpg');
     }
     .fas {
         font-size: 1.3em;
